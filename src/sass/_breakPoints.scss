@@ -4,7 +4,7 @@
   }
 }
 @mixin until-tablet {
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
