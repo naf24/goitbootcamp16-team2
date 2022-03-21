@@ -9,13 +9,20 @@
   padding-left: 20px;
   padding-right: 20px;
   background: linear-gradient(to top, #fff 60%, #fff5f6 40%);
+
+  @include until-tablet {
+    max-width: 480px;
+  }
+
   @include tablet {
     padding-left: 74px;
     padding-right: 74px;
+    width: 768px;
   }
   @include desktop {
     padding-left: 134px;
     padding-right: 134px;
+    width: 1280px;
   }
 }
 .gallery__grid {
