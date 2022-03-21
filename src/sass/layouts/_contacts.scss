@@ -1,0 +1,169 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.footer-section {
+    padding: 0 50px;
+    background: linear-gradient(to top, #fff5f6 94%, #fff 6%);
+    @media screen and (min-width: 768px) {
+        padding: 0 36px;
+        background: linear-gradient(to top, #fff5f6 89%, #fff 11%);
+    }
+}
+
+.all-institution {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    margin-bottom: 81px;
+    }
+}
+
+.institution {
+    padding: 43px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+    padding: 50px 32px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    &:last-child{
+        margin-right: 0;
+    }
+    }
+    &__title {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        display: inline-block;
+        text-transform: uppercase;
+        width: 80px;
+        text-align: center;
+        background: #F0D1A5;
+        border-radius: 4px;
+        color: #fff;
+    }
+    &__item {
+        padding: 25px 0;
+        @media screen and (min-width: 768px) {
+        padding: 30px 0;
+        }
+    }
+    &__item:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.foodtruck {
+    background: #C2E297;
+    width: 130px;
+}
+
+.location {
+    border-bottom: 1px solid #E1E1E1;
+    &__city {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        // 
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #907E82;
+    }
+}
+
+.work {
+    border-bottom: 1px solid #E1E1E1;
+    &__day {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+    }
+    &__time {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        // 
+        color: #FFA5BA;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+            }
+    }
+    &__time:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    &__link {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #907E82;
+        text-decoration: none;
+    }
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 53px;
+}
+
+.button {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    color: #D41443;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: transparent;
+    margin-bottom: 10px;
+    width: 162px;
+    height: 44px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background: #D41342;
+    }
+}
