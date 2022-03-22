@@ -64,7 +64,6 @@
     @include tablet {
       font-size: 48px; 
       line-height: 1.15; 
-    
     }
     @include desktop{
       font-size: 58px; 
@@ -222,6 +221,25 @@
             top: -198px;
           }
 }
+
+    // background-image: url(../images/pc/pc-produckt-1-x1.png);
+    // background-position: right 0px top -150px;
+    // background-repeat: no-repeat;
+    
+    
+    .products__cream{
+    background-color: $middlePinkColor;
+    }
+    .products__coffee{
+    background-color: $yellowColor;
+    }
+    .products__milkshakes{
+    background-color: $greenColor;
+    }
+    // .products__milkshakes::before{
+    //   content: "";
+    // background-image: url(../images/pc/pc-produckt-2-x1.png);
+    // }
     .products__title{
     font-family: Titan One;
     font-style: normal;
@@ -284,6 +302,7 @@
         background-color: $AccentPinkColor;
         color: $whiteColor;
     }
+
     
     .backdrop {
     width: 100%;
