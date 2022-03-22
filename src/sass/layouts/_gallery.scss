@@ -28,9 +28,15 @@
   &__grid {
     display: grid;
     justify-content: center;
-    grid-gap: 5px;
+    grid-gap: 2px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
+    @include tablet {
+      grid-gap: 4px;
+    }
+    @include desktop {
+      grid-gap: 5px;
+    }
   }
   &__item {
     cursor: pointer;
