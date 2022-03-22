@@ -11,10 +11,10 @@ p {
 
 .contacts-section {
     padding: 0 35px;
-    background: linear-gradient(to top, #fff5f6 94%, #fff 6%);
+    background: linear-gradient(to top, #fff5f6 93%, #fff 7%);
     @media screen and (min-width: 768px) {
         padding: 0 21px;
-        background: linear-gradient(to top, #fff5f6 89%, #fff 11%);
+        background: linear-gradient(to top, #fff5f6 87%, #fff 13%);
     }
     @media screen and (min-width: 1200px) {
         background-image:url(../../src/images/pc/pc-footer-bg-x1.png),linear-gradient(to top, #fff5f6 85%, #fff 15%);
@@ -77,9 +77,9 @@ p {
         }
     }
     &__item {
-        margin: 25px 0;
+        padding: 25px 0;
         @media screen and (min-width: 768px) {
-        margin: 30px 0;
+        padding: 30px 0;
         }
     }
     &__item:last-child {
@@ -118,7 +118,7 @@ p {
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.66;
         color: #907E82;
         @media screen and (min-width: 768px) {
             font-size: 14px;
@@ -182,6 +182,7 @@ p {
         text-decoration: none;
         @media screen and (min-width: 768px) {
             font-size: 14px;
+            line-height: 1.83;
         }
         @media screen and (min-width: 1200px) {
             font-size: 16px;
