@@ -6,8 +6,8 @@
 .gallery__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: linear-gradient(to top, #fff 60%, #fff5f6 40%);
 
   @include until-tablet {
@@ -15,14 +15,14 @@
   }
 
   @include tablet {
-    padding-left: 74px;
-    padding-right: 74px;
+    padding-left: 35px;
+    padding-right: 35px;
     width: 768px;
   }
   @include desktop {
-    padding-left: 134px;
-    padding-right: 134px;
-    width: 1280px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 1050px;
   }
 }
 .gallery__grid {
