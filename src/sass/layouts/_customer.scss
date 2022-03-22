@@ -1,9 +1,8 @@
+@import '../breakPoints';
+
 .reviews {
-  padding-top: 123px;
-  padding-bottom: 132px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fafafa;
+  padding-top: 213px;
+  padding-bottom: 42px;
 }
 
 /*--------- Swiper--------- */
@@ -40,37 +39,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-// .swiper-slide-photo-1::before {
-//   content: '';
-//   position: absolute;
-//   width: 85px;
-//   height: 85px;
-//   background-image: url(../../src/images/pc/pc-comment-1-x1.png);
-//   border-radius: 50%;
-//   display: flex;
-//   top: 0;
-// }
-
-// .swiper-slide-photo-2::before {
-//   content: '';
-//   position: absolute;
-//   width: 85px;
-//   height: 85px;
-//   background-image: url(../../src/images/pc/pc-comment-2-x1.png);
-//   border-radius: 50%;
-//   top: 0;
-// }
-
-// .swiper-slide-photo-3::before {
-//   content: '';
-//   position: absolute;
-//   width: 85px;
-//   height: 85px;
-//   background-image: url(../../src/images/pc/pc-comment-3-x1.png);
-//   border-radius: 50%;
-//   top: 0;
-// }
 
 .text-decoration {
   font-family: DM Sans;
@@ -116,4 +84,49 @@
   z-index: -2;
   bottom: 54%;
   left: 5.5%;
+}
+
+.reviews-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fafafa;
+
+  // @include until-tablet {
+  //   max-width: 480px;
+  // }
+
+  // @include tablet {
+  //   padding-left: 74px;
+  //   padding-right: 74px;
+  //   width: 768px;
+  // }
+  // @include desktop {
+  //   padding-left: 136px;
+  //   padding-right: 136px;
+  //   width: 1280px;
+  // }
+}
+@media screen and (min-width: 480px) {
+  .reviews-wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-wrapper {
+    width: 740px;
+  }
+  .swiper-slide {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-wrapper {
+    width: 1090px;
+  }
 }
