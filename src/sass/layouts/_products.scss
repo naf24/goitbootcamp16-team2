@@ -31,7 +31,6 @@
         padding-bottom: 119px;
       }
     }
-    
     .products__pre-title {
     font-family: Titan One;
     font-style: normal;
@@ -41,7 +40,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffa5ba;
-    display: block;
     @include tablet {
       font-size: 26px; 
       line-height: 1.15; 
@@ -73,8 +71,9 @@
     }
     .products__list {
     margin-top: 144px;
-    display: inline-block;
     justify-content: center;
+    margin-bottom: -130px;
+    
     @include tablet {
     margin-right: -20px;
     margin-top: 150px;
@@ -88,20 +87,22 @@
     }
     }
     .products__item {
-    // width: 280px;
+width: 280px;
     // height: 485px;
     border-radius: 24px;
     padding-bottom: 41px;
-    padding-top: 161px;
+    padding-top: 11px;
+    margin-bottom: 130px;
+
     @include tablet {
       margin-right: 20px;
       padding-bottom: 40px;
-      flex-basis: calc((100% - 60px) / 3);
+      width: calc((100% - 60px) / 3);
       padding-top: 152px;
     }
     @include desktop{
       margin-right: 27px;
-      flex-basis: calc((100% - 81px) / 3);
+      width: calc((100% - 81px) / 3);
       padding-bottom: 50px;
       padding-top: 165px;
     }
@@ -120,7 +121,7 @@
             background-image: url(../images/pc/pc-produckt-1-x1.png);
             background-repeat: no-repeat;
             background-size: cover;  
-            top: -138px;
+            top: -120px;
             @include tablet {
                 content: "";
                 position: absolute;
@@ -158,7 +159,7 @@
         background-image: url(../images/pc/pc-produckt-2-x1.png);
         background-repeat: no-repeat;
         background-size: cover;  
-        top: -138px;
+        top: -120px;
         @include tablet {
             content: "";
             position: absolute;
@@ -197,7 +198,7 @@
         background-image: url(../images/pc/pc-produckt-3-x1.png);
         background-repeat: no-repeat;
         background-size: cover;  
-        top: -138px;
+        top: -120px;
         @include tablet {
             content: "";
             position: absolute;
@@ -236,10 +237,7 @@
     .products__milkshakes{
     background-color: $greenColor;
     }
-    // .products__milkshakes::before{
-    //   content: "";
-    // background-image: url(../images/pc/pc-produckt-2-x1.png);
-    // }
+  
     .products__title{
     font-family: Titan One;
     font-style: normal;
@@ -266,6 +264,8 @@
       padding: 0;
     }
     .products__text{
+        padding-left: 41px;
+        padding-right: 41px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 700;
@@ -275,6 +275,14 @@
     letter-spacing: 0.04em;
     color: $whiteColor;
     display: inline-flex;
+    @include tablet {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+      @include desktop{
+        padding-left: 44px;
+        padding-right: 44px;
+    }
     }
     
     .conteiner-button{
@@ -299,8 +307,8 @@
     border-radius: 50%;
     }
     .products__button:hover, .products__button:focus {
-        background-color: $AccentPinkColor;
-        color: $whiteColor;
+        background-color: #ECEBEB;
+        color: $AccentPinkColor;
     }
 
     
