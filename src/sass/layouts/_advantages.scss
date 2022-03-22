@@ -1,0 +1,174 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages {
+  background-color: $fieldPinkColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container--advantages {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @include tablet {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+
+  @include desktop {
+    padding-top: 20px;
+  }
+}
+
+.advantages__list {
+  margin-bottom: -38px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 0;
+    margin-right: -60px;
+  }
+  @include desktop {
+    margin-right: -30px;
+  }
+}
+
+.advantages__item {
+  @include tablet {
+    margin-right: 60px;
+  }
+  @include desktop {
+    margin-right: 30px;
+  }
+}
+
+.advantages__number {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Titan One, sans-serif;
+  font-size: 36px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $AccentPinkColor;
+
+  @include tablet {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.advantages__number--bucket {
+  &::before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url('../images/mobile/tradition-logo-1-x1.png');
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/tradition-logo-1-x2.png');
+    }
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.advantages__number--apple {
+  &::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url('../images/mobile/tradition-logo-2-x1.png');
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/tradition-logo-2-x2.png');
+    }
+
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.advantages__number--heart {
+  &::before {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-image: url('../images/mobile/tradition-logo-3-x1.png');
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/tradition-logo-3-x2.png');
+    }
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.advantages__text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $titleBlackColor;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.74;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}
