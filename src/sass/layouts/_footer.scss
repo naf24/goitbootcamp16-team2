@@ -2,7 +2,7 @@
     background-color: $fieldPinkColor;
     padding-left: 0px;
     padding-right: 0px;
-  width: 100%;
+    width: 100%;
     }
 
     .footer__container{
@@ -10,31 +10,29 @@
     padding-top: 113px;
     padding-bottom: 43px;
     border-bottom: 1px solid #E1E1E1;
-    padding-left: 20px;
-    padding-right: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
      @include tablet {
     display: flex;
     justify-content: space-between;
     padding-top: 165px;
     padding-bottom: 91px;
-    width: 100%;
-    padding-left: 36px;
-    padding-right: 36px;
+    // padding-left: 36px;
+    // padding-right: 36px;
     }
     @include desktop {
     padding-top: 165px;
     padding-bottom: 97px;
     display: flex;
     justify-content: space-between;
-    padding-left: 114px;
-    padding-right: 116px;
+    // padding-left: 114px;
+    // padding-right: 116px;
     }
     }
     .footer__title{
     margin-bottom: 43px;
     @include desktop {
         margin-bottom: 0px;
-        width: 340px;
         }
         @include desktop {
         margin-bottom: 0px;
@@ -141,14 +139,20 @@
         padding-top: 29px;
         padding-bottom: 18px; 
         display: flex;
+        flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
         @include desktop {
             padding-top: 9px;
             padding-bottom: 10px; 
             display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
         }
     }
-    .footer__text--grey{
+    .footer__text--grey, .footer__text--mob{
     display: flex;
     font-family: DM Sans;
     font-style: normal;
@@ -168,22 +172,4 @@
     }
     .footer__text--mob{
 margin-left: 5px;
-text-align: center;
-display: flex;
-font-family: DM Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.52;
-color: $textGreyColor;
-justify-content: center;
-@include tablet {
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    }
-    @include desktop {
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-        display: flex;
-    }
     }
