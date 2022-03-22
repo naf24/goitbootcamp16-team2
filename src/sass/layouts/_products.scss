@@ -102,12 +102,12 @@ width: 280px;
     @include tablet {
       margin-right: 20px;
       padding-bottom: 40px;
-      width: calc((100% - 60px) / 3);
+      width: calc(100% / 3 - 20px);
       padding-top: 152px;
     }
     @include desktop{
       margin-right: 27px;
-      width: calc((100% - 81px) / 3);
+      width: calc(100% / 3 - 27px);
       padding-bottom: 50px;
       padding-top: 165px;
     }
