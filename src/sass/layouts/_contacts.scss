@@ -16,7 +16,7 @@ p {
         padding: 0 21px;
         background: linear-gradient(to top, #fff5f6 89%, #fff 11%);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         background-image:url(../../src/images/pc/pc-footer-bg-x1.png),linear-gradient(to top, #fff5f6 85%, #fff 15%);
         background-repeat: no-repeat;
         background-size: contain;
@@ -44,12 +44,10 @@ p {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin-bottom: 20px;
-    &:last-child {
-        margin-bottom: 0;
-    }
     @media screen and (min-width: 768px) {
     padding: 50px 32px;
     margin-right: 20px;
+    margin-bottom: 0;
     &:last-child {
         margin-right: 0;
     }
@@ -74,6 +72,9 @@ p {
         background: #F0D1A5;
         border-radius: 4px;
         color: #fff;
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
     }
     &__item {
         padding: 25px 0;
@@ -102,6 +103,12 @@ p {
         // 
         letter-spacing: 0.04em;
         margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
     }
     &__text {
         font-family: 'DM Sans';
@@ -110,6 +117,12 @@ p {
         font-size: 12px;
         line-height: 1.5;
         color: #907E82;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -121,6 +134,12 @@ p {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
     }
     &__time {
         font-family: 'DM Sans';
@@ -128,6 +147,12 @@ p {
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
         // 
         color: #FFA5BA;
         text-transform: uppercase;
@@ -152,6 +177,12 @@ p {
         line-height: 1.5;
         color: #907E82;
         text-decoration: none;
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+        }
     }
 }
 
