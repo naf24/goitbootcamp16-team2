@@ -78,12 +78,14 @@ p {
     }
     &__item {
         padding: 25px 0;
+        border-bottom: 1px solid #E1E1E1;
         @media screen and (min-width: 768px) {
         padding: 30px 0;
         }
     }
     &__item:last-child {
         padding-bottom: 0;
+        border-bottom: 0;
         @media screen and (min-width: 768px) {
         margin-bottom: 0;
         }
@@ -96,7 +98,7 @@ p {
 }
 
 .location {
-    border-bottom: 1px solid #E1E1E1;
+    // border-bottom: 1px solid #E1E1E1;
     &__city {
         font-family: 'DM Sans';
         font-style: normal;
@@ -130,7 +132,7 @@ p {
 }
 
 .work {
-    border-bottom: 1px solid #E1E1E1;
+    // border-bottom: 1px solid #E1E1E1;
     &__day {
         font-family: 'DM Sans';
         font-style: normal;
