@@ -22,11 +22,11 @@
     .products {
       padding-top: 121px;
       padding-bottom: 98px;  
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
+      @include tablet {
         padding-top: 122px;
         padding-bottom: 112px;
       }
-      @media screen and (min-width: 1280px){
+      @include desktop {
         padding-top: 127px;
         padding-bottom: 119px;
       }
@@ -42,11 +42,11 @@
     text-transform: uppercase;
     color: #ffa5ba;
     display: block;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
       font-size: 26px; 
       line-height: 1.15; 
     }
-    @media screen and (min-width: 1280px){
+    @include desktop{
       font-size: 30px; 
       line-height: 1.13;
     }
@@ -61,12 +61,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $AccentPinkColor;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
       font-size: 48px; 
       line-height: 1.15; 
     
     }
-    @media screen and (min-width: 1280px){
+    @include desktop{
       font-size: 58px; 
       line-height: 1.14;
       letter-spacing: 0.06em;
@@ -76,12 +76,12 @@
     margin-top: 144px;
     display: inline-block;
     justify-content: center;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     margin-right: -20px;
     margin-top: 150px;
     justify-content: center;
     display: flex;}
-    @media screen and (min-width: 1280px){
+    @include desktop{
       display: flex;
       justify-content: center;
       margin-right: -27px;
@@ -94,13 +94,13 @@
     border-radius: 24px;
     padding-bottom: 41px;
     padding-top: 161px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
       margin-right: 20px;
       padding-bottom: 40px;
       flex-basis: calc((100% - 60px) / 3);
       padding-top: 152px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop{
       margin-right: 27px;
       flex-basis: calc((100% - 81px) / 3);
       padding-bottom: 50px;
@@ -122,7 +122,7 @@
             background-repeat: no-repeat;
             background-size: cover;  
             top: -138px;
-            @media screen and (min-width: 768px) and (max-width: 1279px) {
+            @include tablet {
                 content: "";
                 position: absolute;
                 display: block;
@@ -133,7 +133,7 @@
                 background-size: cover;  
                 top: -138px;
               }
-              @media screen and (min-width: 1280px){
+              @include desktop{
                 content: "";
                 position: absolute;
                 display: block;
@@ -160,7 +160,7 @@
         background-repeat: no-repeat;
         background-size: cover;  
         top: -138px;
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
             content: "";
             position: absolute;
             display: block;
@@ -171,7 +171,7 @@
             background-size: cover;  
             top: -138px;
           }
-          @media screen and (min-width: 1280px){
+          @include desktop{
             content: "";
             position: absolute;
             display: block;
@@ -199,7 +199,7 @@
         background-repeat: no-repeat;
         background-size: cover;  
         top: -138px;
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
             content: "";
             position: absolute;
             display: block;
@@ -210,7 +210,7 @@
             background-size: cover;  
             top: -138px;
           }
-          @media screen and (min-width: 1280px){
+          @include desktop{
             content: "";
             position: absolute;
             display: block;
@@ -233,10 +233,10 @@
     text-transform: uppercase;
     color: $whiteColor;
     margin-top: 144px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     margin-top: 0px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop{
     margin-top: 0px;
     }
     }
@@ -263,10 +263,10 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     margin-top: 40px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop{
       margin-top: 62px;}
     }
     .products__button{

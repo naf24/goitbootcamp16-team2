@@ -11,7 +11,7 @@
     border-bottom: 1px solid #E1E1E1;
     padding-left: 20px;
     padding-right: 20px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+     @include tablet {
     display: flex;
     justify-content: space-between;
     padding-top: 165px;
@@ -20,7 +20,7 @@
     padding-left: 36px;
     padding-right: 36px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop {
     padding-top: 165px;
     padding-bottom: 97px;
     display: flex;
@@ -35,7 +35,7 @@
         margin-bottom: 0px;
         width: 340px;
         }
-        @media screen and (min-width: 1280px){
+        @include desktop {
         margin-bottom: 0px;
         }
     }
@@ -49,14 +49,14 @@
     color: $strongPinkColor; 
     margin-right: 66px;
     margin-bottom: 17px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     font-size: 26px;
     letter-spacing: 0.04em;
     line-height: 1.15;
     margin-right: 0px;
     margin-bottom: 16px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop {
         font-size: 30px;
         letter-spacing: 0.06em;
         line-height: 1.13;
@@ -71,12 +71,12 @@
     text-transform: uppercase;
     color: $AccentPinkColor;
     margin-right: 100px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     font-size: 48px;
     letter-spacing: 0.06em;
     margin-right: 0px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop {
         font-size: 58px;
         letter-spacing: 0.06em;
         margin-right: 0px;
@@ -108,10 +108,10 @@
     display: flex;
     justify-content: flex-end;
     margin-left: 5px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet{
         font-size: 14px;
         }
-        @media screen and (min-width: 1280px){
+        @include desktop {
             font-size: 16px;
         }
     }
@@ -125,10 +125,10 @@
     display: flex;
     justify-content: flex-end;
     
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
     font-size: 14px;
     }
-    @media screen and (min-width: 1280px){
+    @include desktop {
         font-size: 16px;
     }
     }
@@ -136,11 +136,11 @@
     padding-top: 22px;
     padding-bottom: 25px; 
     
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
         padding-top: 29px;
         padding-bottom: 18px; 
         }
-        @media screen and (min-width: 1280px){
+        @include desktop {
             padding-top: 9px;
             padding-bottom: 10px; 
         }
@@ -155,11 +155,11 @@
     color: $textGreyColor;
     justify-content: center;
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @include tablet {
         line-height: 1.86;
         letter-spacing: 0.02em;
         }
-        @media screen and (min-width: 1280px){
+        @include desktop {
             line-height: 1.86;
             letter-spacing: 0.02em;
         }
