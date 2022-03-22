@@ -3,6 +3,7 @@
     <div class="gallery__grid">
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/istockphoto-1042613780-612x612.jpg"
           alt=""
@@ -10,6 +11,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1447195047884-0f014b0d9288.jpg"
           alt=""
@@ -17,6 +19,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/istockphoto-504118812-612x612.jpg"
           alt=""
@@ -24,6 +27,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/istockphoto-1143594100-612x612.jpg"
           alt=""
@@ -31,6 +35,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1505394033641-40c6ad1178d7.jpg"
           alt=""
@@ -38,6 +43,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1536351425844-145ebdae32d8.jpg"
           alt=""
@@ -45,6 +51,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1554630981-a73ffb5ed6f8.jpg"
           alt=""
@@ -52,6 +59,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1561230101-2c841778f9ae.jpg"
           alt=""
@@ -59,6 +67,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1590080962330-747c6aba8028.jpg"
           alt=""
@@ -66,6 +75,7 @@
       </div>
       <div class="gallery__item">
         <img
+          img-pick
           class="gallery__image"
           src="../src/images/pc/photo-1616863858589-9e04f2728c86.jpg"
           alt=""
@@ -73,4 +83,33 @@
       </div>
     </div>
   </div>
+  <script>
+    let myImages = document.querySelectorAll('[img-pick]');
+
+    let imgPool = [
+      'https://images.pexels.com/photos/4858510/pexels-photo-4858510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      'https://images.pexels.com/photos/7761734/pexels-photo-7761734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      'https://images.pexels.com/photos/6270663/pexels-photo-6270663.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      'https://images.pexels.com/photos/5535554/pexels-photo-5535554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      'https://thumbs.dreamstime.com/b/strawberry-icecream-texture-25562179.jpg',
+      'https://thumbs.dreamstime.com/b/white-vanilla-ice-cream-bowl-wooden-background-selective-focus-30299236.jpg',
+      'https://thumbs.dreamstime.com/b/raspberry-ripple-ice-cream-scoops-fresh-berries-square-raspberry-ripple-ice-cream-122670663.jpg',
+      'https://thumbs.dreamstime.com/b/chocolate-ice-cream-20162152.jpg',
+      'https://media.istockphoto.com/photos/hands-holding-ice-cream-in-waffle-cone-picture-id951490642?k=20&m=951490642&s=612x612&w=0&h=4KKQH9Y51YjL4tbhtUYvsMFAR3Cpc1SdbU4lRu2dpZk=',
+      'https://images.unsplash.com/photo-1514849302-984523450cf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlY3JlYW18ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      'https://images.unsplash.com/photo-1590080876209-c70d0f0bf6a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGljZWNyZWFtfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+    ];
+
+    myImages.forEach(myImage => {
+      myImage.addEventListener('click', () => {
+        const mySrc = myImage.getAttribute('src');
+        let previus = myImage.getAttribute('src');
+        myImage.setAttribute('src', imgPool[Math.floor(Math.random() * imgPool.length)]);
+
+        while (myImage.getAttribute('src') == previus) {
+          myImage.setAttribute('src', imgPool[Math.floor(Math.random() * imgPool.length)]);
+        }
+      });
+    });
+  </script>
 </section>

@@ -1,4 +1,5 @@
 @import '../breakPoints';
+
 .gallery {
   background: linear-gradient(to top, #fff 60%, #fff5f6 40%);
   // &__image {
@@ -32,6 +33,7 @@
     grid-auto-rows: auto;
   }
   &__item {
+    cursor: pointer;
     overflow: hidden;
     border-radius: 15%;
     box-shadow: transparent;
