@@ -140,10 +140,12 @@
     @include tablet {
         padding-top: 29px;
         padding-bottom: 18px; 
+        display: flex;
         }
         @include desktop {
             padding-top: 9px;
             padding-bottom: 10px; 
+            display: flex;
         }
     }
     .footer__text--grey{
@@ -167,4 +169,21 @@
     .footer__text--mob{
 margin-left: 5px;
 text-align: center;
+display: flex;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.52;
+color: $textGreyColor;
+justify-content: center;
+@include tablet {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    }
+    @include desktop {
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+        display: flex;
+    }
     }
