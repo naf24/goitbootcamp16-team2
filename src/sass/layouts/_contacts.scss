@@ -77,13 +77,16 @@ p {
         }
     }
     &__item {
-        padding: 25px 0;
+        margin: 25px 0;
         @media screen and (min-width: 768px) {
-        padding: 30px 0;
+        margin: 30px 0;
         }
     }
     &__item:last-child {
         padding-bottom: 0;
+        @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        }
     }
 }
 
