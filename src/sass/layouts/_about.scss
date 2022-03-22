@@ -1,0 +1,207 @@
+.about {
+  background-color: $fieldPinkColor;
+
+  @include until-tablet {
+    background-image: url('../images/mobile/milk-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/milk-x2.png');
+    }
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 80px;
+  }
+
+  @include desktop {
+    background-image: url('../images/pc/pc-tradition-milk-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/pc/pc-tradition-milk-x2.png');
+    }
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 0 bottom -45px;
+  }
+}
+
+.about--container {
+  padding-top: 125px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+
+  @include desktop {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
+}
+
+.tradition__label {
+  margin-bottom: 15px;
+  display: block;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $strongPinkColor;
+
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.63;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.tradition__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $AccentPinkColor;
+
+  @include tablet {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @include desktop {
+    margin-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.tradition__container {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.tradition__item {
+  @media screen and (min-width: 768px) {
+    min-width: calc((100% - 20px) / 2);
+  }
+
+  @include desktop {
+    min-width: calc((100% - 74px) / 2);
+  }
+}
+
+.tradition__item--content {
+  padding-right: 35px;
+  padding-left: 35px;
+
+  @include tablet {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  @include desktop {
+    display: block;
+    padding-left: 74px;
+    max-width: 534px;
+  }
+}
+
+.tradition__description {
+  margin-top: 46px;
+  margin-bottom: 47px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $titleBlackColor;
+
+  @include tablet {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.tradition__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $textGreyColor;
+
+  @include tablet {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include desktop {
+    margin-bottom: 35px;
+
+    line-height: 1.94;
+  }
+}
+
+.tradition__button {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+  padding: 15px 48px;
+  min-width: 176px;
+  height: 44px;
+
+  background: $whiteColor;
+  border-radius: 22px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $AccentPinkColor;
+
+  &:hover {
+    background: #ecebeb;
+  }
+  &:focus {
+    background: #ecebeb;
+  }
+
+  @include tablet {
+    margin-top: 62px;
+  }
+
+  @include desktop {
+    margin-top: 45px;
+  }
+}
+
+.tradition__icon {
+  margin: 20px 0 16px 12px;
+}
