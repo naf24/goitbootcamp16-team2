@@ -17,7 +17,7 @@ p {
         background: linear-gradient(to top, #fff5f6 87%, #fff 13%);
     }
     @media screen and (min-width: 1200px) {
-        background-image:url(../../src/images/pc/pc-footer-bg-x1.png),linear-gradient(to top, #fff5f6 85%, #fff 15%);
+        background-image:url(../images/pc/pc-footer-bg-x1.png),linear-gradient(to top, #fff5f6 85%, #fff 15%);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 0;
@@ -219,6 +219,7 @@ p {
     margin-bottom: 10px;
     width: 162px;
     height: 44px;
+    stroke: #D41443;
     @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 15px;
@@ -230,6 +231,7 @@ p {
     &:focus {
         color: #FFFFFF;
         background: #D41342;
+        stroke: #FFFFFF;
     }
 }
 
