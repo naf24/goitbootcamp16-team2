@@ -80,7 +80,7 @@
   position: relative;
   margin: 0 0 47px 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.87;
 }
 
@@ -169,6 +169,9 @@
       top: 130px;
     }
   }
+  .text-decoration-name {
+    font-size: 16px;
+  }
 }
 
 // ----------1200px----------
@@ -196,8 +199,8 @@
 
   .text-decoration {
     width: 100%;
-    font-size: 14px;
-    line-height: 2.14;
+    font-size: 16px;
+    line-height: 1.87;
     padding-right: 27px;
     padding-left: 27px;
     &::before {
@@ -213,6 +216,10 @@
       top: 115px;
     }
   }
+
+  .text-decoration-name {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -227,11 +234,5 @@
       width: 32px;
       height: 4px;
     }
-  }
-
-  .text-decoration {
-    font-size: 12px;
-    line-height: 1.87;
-    letter-spacing: 0.04em;
   }
 }
