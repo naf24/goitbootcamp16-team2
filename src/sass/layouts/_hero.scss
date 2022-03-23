@@ -212,18 +212,27 @@ z-index:-1;
         @media screen and (min-width:768px){
             display: block;
         }
-        @media screen and (min-device-pixel-ratio:2) {
+        @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url("../images/tab/tab-3hero-img-x2.png");
         background-repeat:no-repeat;
         background-size: contain;
         }
         @media screen and (min-width:1200px) {
-          background-image: url("../images/tab/tab-3hero-img-x2.png");
+          background-image: url("../images/pc/pc-3hero-img-x1.png");
+        background-repeat:no-repeat;
+        background-size: contain;
+        width:304px;
+        height:241px;
+
+        @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url("../images/pc/pc-3hero-img-x2.png");
         background-repeat:no-repeat;
         background-size: contain;
         width:304px;
         height:241px;
         }
+        }
+        
     }
    
 }
