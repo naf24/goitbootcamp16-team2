@@ -7,17 +7,20 @@ body {
   padding-top: 8px;
   padding-bottom: 25px;
   border: 1px solid #ffb8ca;
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     padding-top: 32px;
-    padding-bottom:0;
+    padding-bottom:20px;
     border: 1px solid #ffb8ca;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width:1280px){
     padding-top:40px;
+    padding-bottom: 40px;
   }
   &__link-list{
     display:none;
-    @media (min-width:1200px) {
+    position: relative;
+    z-index: 3;
+    @media (min-width:1280px) {
       display: flex;
       list-style-type: none;
     }
@@ -30,7 +33,7 @@ body {
     display: none;
     
 position:relative;
-@media screen and (min-width:1200px){
+@media screen and (min-width:1280px){
   display:flex;
 }
 z-index: 3;
@@ -51,6 +54,7 @@ z-index: 3;
     font-size: 16px;
     line-height: calc(16 / 20.83);
     color: $AccentPinkColor;
+    text-align: center;
   }
   &__desktop-button:hover, &__desktop-button:focus{
     color:#ECEBEB;
@@ -76,7 +80,7 @@ z-index: 3;
   background-color: transparent;
   padding: 0;
   border: none;
-  @media (min-width:1200px){
+  @media (min-width:1280px){
     display: none;
   }
 }
@@ -87,7 +91,7 @@ z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width:1200px){
+  @media screen and (min-width:1280px){
     display: block;
   }
 }
@@ -105,7 +109,7 @@ z-index: 3;
   right: 0;
 
   transition: transform 600ms ease-in-out;
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     width:254px;
     height:1020px;
   }
@@ -121,7 +125,7 @@ z-index: 3;
     background-color: #ffffff;
     border-radius: 22px;
     border: none;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
       width:186px;
     }
   }
@@ -181,7 +185,7 @@ z-index: 3;
   border-radius: 22px;
   border: none;
   margin-left:32px;
-  @media screen and (min-width: 768px) and (max-width:1200px) {
+  @media screen and (min-width: 768px) and (max-width:1280px) {
     display: flex;
   
   }
@@ -199,7 +203,7 @@ z-index: 3;
  
 }
 .tablet-buttons {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     display: flex;
     align-items: center;
   }
