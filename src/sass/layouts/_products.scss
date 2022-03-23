@@ -93,7 +93,7 @@
     }
     .products__item {
 width: 280px;
-    // height: 485px;
+    // min-height: 485px;
     border-radius: 24px;
     padding-bottom: 41px;
     padding-top: 144px;
@@ -123,20 +123,29 @@ width: 280px;
             display: block;
             width: 249px;
             height: 252px;
-            background-image: url(../images/pc/pc-produckt-1-x1.png);
+            background-image: url('../images/mobile/produckt-1-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
             top: -120px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/mobile/produckt-1-x2.png');}
             @include tablet {
                 content: "";
                 position: absolute;
                 display: block;
                 width: 220px;
                 height: 225px;
-                background-image: url(../images/pc/pc-produckt-1-x1.png);
+                background-image: url('../images/tab/tab-produckt-1-x1.png');
                 background-repeat: no-repeat;
                 background-size: cover;  
                 top: -138px;
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: url('../images/tab/tab-produckt-1-x2.png')
+              }
               }
               @include desktop{
                 content: "";
@@ -144,10 +153,15 @@ width: 280px;
                 display: block;
                 width: 335px;
                 height: 335px;
-                background-image: url(../images/pc/pc-produckt-1-x1.png);
+                background-image: url('../images/pc/pc-produckt-1-x1.png');
                 background-repeat: no-repeat;
                 background-size: cover;  
                 top: -198px;
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: url('../images/pc/pc-produckt-1-x2.png');
+              }
               }
     }
     
@@ -161,20 +175,30 @@ width: 280px;
         display: block;
         width: 249px;
         height: 252px;
-        background-image: url(../images/pc/pc-produckt-2-x1.png);
+        background-image: url('../images/mobile/produckt-2-x1.png');
         background-repeat: no-repeat;
         background-size: cover;  
         top: -120px;
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/mobile/produckt-2-x2.png');}
         @include tablet {
             content: "";
             position: absolute;
             display: block;
             width: 220px;
             height: 225px;
-            background-image: url(../images/pc/pc-produckt-2-x1.png);
+            background-image: url('../images/tab/tab-produckt-2-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
             top: -138px;
+    
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/tab/tab-produckt-2-x2.png')
+          }
           }
           @include desktop{
             content: "";
@@ -182,10 +206,15 @@ width: 280px;
             display: block;
             width: 335px;
             height: 335px;
-            background-image: url(../images/pc/pc-produckt-2-x1.png);
+            background-image: url('../images/pc/pc-produckt-2-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
             top: -198px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/pc/pc-produckt-2-x2.png');
+          }
           }
 }
 
@@ -200,7 +229,12 @@ width: 280px;
         display: block;
         width: 249px;
         height: 252px;
-        background-image: url(../images/pc/pc-produckt-3-x1.png);
+        background-image: url('../images/mobile/produckt-3-x1.png');
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/mobile/produckt-3-x2.png');
+    }
         background-repeat: no-repeat;
         background-size: cover;  
         top: -120px;
@@ -210,10 +244,15 @@ width: 280px;
             display: block;
             width: 220px;
             height: 225px;
-            background-image: url(../images/pc/pc-produckt-3-x1.png);
+            background-image: url('../images/tab/tab-produckt-3-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
             top: -138px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/tab/tab-produckt-3-x2.png')
+          }
           }
           @include desktop{
             content: "";
@@ -221,18 +260,17 @@ width: 280px;
             display: block;
             width: 335px;
             height: 335px;
-            background-image: url(../images/pc/pc-produckt-3-x1.png);
+            background-image: url('../images/pc/pc-produckt-3-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
             top: -198px;
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url('../images/pc/pc-produckt-3-x2.png');
+          }
           }
 }
-
-    // background-image: url(../images/pc/pc-produckt-1-x1.png);
-    // background-position: right 0px top -150px;
-    // background-repeat: no-repeat;
-    
-    
     .products__cream{
     background-color: $middlePinkColor;
     }

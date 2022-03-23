@@ -35,7 +35,7 @@
     }
     .footer__title{
     margin-bottom: 43px;
-    @include desktop {
+    @include tablet {
         margin-bottom: 0px;
         }
         @include desktop {
@@ -43,6 +43,21 @@
         }
     }
     
+    .footer__title--first{
+        display: block;
+        flex-direction: column;
+        @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        }
+        @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -20px;
+        }
+    } 
     .footer__title--light{
     font-family: Titan One;
     font-size: 18px;
@@ -64,6 +79,8 @@
         letter-spacing: 0.06em;
         line-height: 1.13;
         margin-right: 0px;
+        display: flex;
+        margin-left: 20px;
     }
     }
     .footer__title--accent{
@@ -83,6 +100,8 @@
         font-size: 58px;
         letter-spacing: 0.06em;
         margin-right: 0px;
+        display: flex;
+        margin-left: 20px;
     }
     }
     .footer__list{
