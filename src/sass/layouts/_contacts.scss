@@ -72,8 +72,10 @@ p {
         background: #F0D1A5;
         border-radius: 4px;
         color: #fff;
+        word-spacing: -4px;
         @media screen and (min-width: 768px) {
             font-size: 16px;
+            word-spacing: normal;
         }
     }
     &__item {
