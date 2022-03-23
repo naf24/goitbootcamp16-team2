@@ -93,15 +93,6 @@ p {
         margin-bottom: 0;
         }
     }
-}
-
-.foodtruck {
-    background: #C2E297;
-    width: 130px;
-}
-
-.location {
-    // border-bottom: 1px solid #E1E1E1;
     &__city {
         font-family: 'DM Sans';
         font-style: normal;
@@ -132,10 +123,6 @@ p {
             font-size: 16px;
         }
     }
-}
-
-.work {
-    // border-bottom: 1px solid #E1E1E1;
     &__day {
         font-family: 'DM Sans';
         font-style: normal;
@@ -172,11 +159,14 @@ p {
     &__time:last-child {
         margin-bottom: 0;
     }
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
+    &__item--contacts {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        @media screen and (min-width: 768px) {
+        padding-top: 30px;
+        }
+    }
     &__link {
         font-family: 'DM Sans';
         font-style: normal;
@@ -195,6 +185,10 @@ p {
     }
 }
 
+.foodtruck {
+    background: #C2E297;
+    width: 130px;
+}
 
 .buttons {
     display: flex;
