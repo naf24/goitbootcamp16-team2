@@ -14,7 +14,7 @@ body {
   }
   @media screen and (min-width:1280px){
     padding-top:40px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
   &__link-list{
     display:none;
@@ -23,22 +23,39 @@ body {
     @media (min-width:1280px) {
       display: flex;
       list-style-type: none;
+      align-items: center;
     }
   }
+  &__link-item{
+  
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(18.23 / 14);
+      text-decoration: none;
+      color: #ffffff;
+      padding-left: 20px;
+      
+  
+  }
+  &__li+&__li{
+    margin-left:35px;
+  }
+  
   &__navigation{
     display: flex;
     justify-content: space-between;
   }
   &__desktop-button{
     display: none;
-    
+   
 position:relative;
 @media screen and (min-width:1280px){
   display:flex;
 }
 z-index: 3;
   justify-content: space-evenly;
-  align-items: baseline;
+  align-items: center;
 
   
   width: 160px;
@@ -54,7 +71,7 @@ z-index: 3;
     font-size: 16px;
     line-height: calc(16 / 20.83);
     color: $AccentPinkColor;
-    text-align: center;
+    
   }
   &__desktop-button:hover, &__desktop-button:focus{
     color:#ECEBEB;
@@ -91,9 +108,18 @@ z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 34px;
+  margin-left: 34px;
   @media screen and (min-width:1280px){
     display: block;
+    margin-left: 45px;
+    margin-right: 115px;
   }
+  @media screen and (min-width:768px) and (max-width:1280px){
+    margin-left:34px;
+    margin-right:34px;
+  }
+
 }
 .sliding-menu.is-hidden {
   pointer-events: none;
@@ -119,6 +145,7 @@ z-index: 3;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
+    align-items:center;
 
     width: 209px;
     height: 44px;
@@ -138,6 +165,7 @@ z-index: 3;
     font-size: 16px;
     line-height: calc(16 / 20.83);
     color: $AccentPinkColor;
+    
   }
   &__button-text + &__button-text {
     margin-left: 18px;
@@ -159,7 +187,7 @@ z-index: 3;
   }
   &__link {
     font-family: 'DM Sans';
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 14px;
     line-height: calc(18.23 / 14);
     text-decoration: none;
@@ -177,6 +205,7 @@ z-index: 3;
 position:relative;
 z-index: 3;
   justify-content: center;
+  align-items: center;
 
   display: none;
   width: 160px;
