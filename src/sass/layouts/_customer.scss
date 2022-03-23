@@ -1,16 +1,17 @@
 @import '../breakPoints';
 
 .reviews {
-  padding-top: 213px;
-  padding-bottom: 42px;
+  padding-top: 80px;
+  padding-bottom: 86px;
 }
 
-/*--------- Swiper--------- */
+.reviews-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fafafa;
+}
+
 .swiper {
-  width: 926px;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
 }
 
@@ -40,26 +41,46 @@
   object-fit: cover;
 }
 
+.img-wrapper {
+  margin-bottom: 15px;
+}
+
+.slider-text-wrapper {
+  padding: 45px 62px 25px 62px;
+  margin-bottom: 34px;
+}
+
 .text-decoration {
   font-family: DM Sans;
   font-weight: 500;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.04em;
-
-  padding-left: 35px;
-  padding-right: 35px;
+  font-size: 12px;
+  line-height: 2.58;
 
   color: $titleBlackColor;
+
   background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
   margin: 0;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+
+    content: '';
+    background-image: url(../../src/images/tab/tab-suffix-1x.png);
+    width: 54px;
+    height: 42px;
+    z-index: -1;
+    left: 67px;
+    top: 130px;
+  }
 }
 
 .text-decoration-name {
+  position: relative;
   margin: 0 0 47px 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.87;
 }
 
@@ -68,65 +89,150 @@
   height: 12px;
   background-color: #d31342;
 }
-.slider-text-wrapper {
-  padding: 32px 54px 32px 52px;
-  margin-bottom: 34px;
-}
 
-.img-wrapper {
-  margin-bottom: 15px;
-}
+// ----------480px----------
 
-.suffix-icon {
-  width: 54px;
-  height: 40px;
-  position: absolute;
-  z-index: -2;
-  bottom: 54%;
-  left: 5.5%;
-}
-
-.reviews-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #fafafa;
-
-  // @include until-tablet {
-  //   max-width: 480px;
-  // }
-
-  // @include tablet {
-  //   padding-left: 74px;
-  //   padding-right: 74px;
-  //   width: 768px;
-  // }
-  // @include desktop {
-  //   padding-left: 136px;
-  //   padding-right: 136px;
-  //   width: 1280px;
-  // }
-}
 @media screen and (min-width: 480px) {
   .reviews-wrapper {
     width: 480px;
     margin: 0 auto;
   }
+
+  .swiper-slide {
+    width: 280px;
+  }
+
+  .slider-text-wrapper {
+    padding: 44px 50px 16px 50px;
+  }
+
+  .text-decoration {
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 2.14;
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      z-index: -1;
+      left: 67px;
+      top: 130px;
+    }
+  }
 }
 
+// ----------768px----------
+
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+
   .reviews-wrapper {
-    width: 740px;
+    width: 772px;
+    margin: 0 auto;
+    padding-left: 74px;
+    padding-right: 74px;
   }
   .swiper-slide {
     width: 620px;
     margin: 0 auto;
   }
+
+  .slider-text-wrapper {
+    padding: 47px 80px 34px 80px;
+    height: 164px;
+  }
+
+  .text-decoration {
+    width: 100%;
+    font-size: 14px;
+    line-height: 2.14;
+    padding-right: 20px;
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      z-index: -1;
+      left: 67px;
+      top: 130px;
+    }
+  }
+  .text-decoration-name {
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+// ----------1200px----------
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 213px;
+    padding-bottom: 42px;
+  }
   .reviews-wrapper {
-    width: 1090px;
+    width: 1280px;
+    margin: 0 auto;
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+  .swiper-slide {
+    width: 926px;
+    margin: 0 auto;
+  }
+
+  .slider-text-wrapper {
+    padding: 32px 52px 28px 52px;
+    height: 164px;
+  }
+
+  .text-decoration {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.87;
+    padding-right: 27px;
+    padding-left: 27px;
+    &::before {
+      display: inline-block;
+      position: absolute;
+
+      content: '';
+      background-image: url(../../src/images/tab/tab-suffix-1x.png);
+      width: 54px;
+      height: 42px;
+      z-index: -1;
+      left: 40px;
+      top: 115px;
+    }
+  }
+
+  .text-decoration-name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .text-decoration-name {
+    &::before {
+      content: '';
+      background-image: url(../../src/images/tab/tab-dots-1x.png);
+      display: inline-block;
+      position: absolute;
+      top: -10px;
+      left: 37%;
+      width: 32px;
+      height: 4px;
+    }
   }
 }
