@@ -38,6 +38,9 @@ body {
       
   
   }
+  &__link-item:hover, &__link-item:focus{
+    color:#D41443;
+  }
   &__li+&__li{
     margin-left:35px;
   }
