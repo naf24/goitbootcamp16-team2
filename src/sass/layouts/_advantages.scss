@@ -41,19 +41,25 @@ ul {
   @include tablet {
     display: flex;
     margin-bottom: 0;
-    margin-right: -60px;
   }
   @include desktop {
-    margin-right: -30px;
   }
 }
 
 .advantages__item {
   @include tablet {
+    width: calc((100% - 150px) / 3);
     margin-right: 60px;
+    &:last-child {
+      margin-right: -60px;
+    }
   }
   @include desktop {
+    width: calc((100% - 90px) / 3);
     margin-right: 30px;
+    &:last-child {
+      margin-right: -30px;
+    }
   }
 }
 
