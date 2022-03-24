@@ -9,11 +9,9 @@ p {
 }
 
 
-.contacts-section {
-    padding: 0 35px;
+.contact {
     background: linear-gradient(to top, #fff5f6 93%, #fff 7%);
     @media screen and (min-width: 768px) {
-        padding: 0 21px;
         background: linear-gradient(to top, #fff5f6 87%, #fff 13%);
     }
     @media screen and (min-width: 1200px) {
@@ -29,12 +27,15 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 35px;
     @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
-    margin-bottom: 81px;
+        flex-wrap: nowrap;
+        margin-bottom: 81px;
+        padding: 0;
     }
     @media screen and (min-width: 1280px) {
         margin-bottom: 86px;
+        padding: 0;
     }
 }
 
@@ -205,6 +206,7 @@ p {
         color: #FFFFFF;
         background: #D41342;
         stroke: #FFFFFF;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
