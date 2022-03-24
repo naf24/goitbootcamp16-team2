@@ -1,92 +1,99 @@
 <header class="header">
   <div class="container">
-    <div class="header__order">
-      <nav class="header__navigation">
-        <a href="">
-          <img
-            class="header__logo"
-            srcset="./images/mobile/site-logo-x1.png 1x, ./images/mobile/site-logo-x2.png 2x"
-            src="./images/mobile/site-logo-x1.png"
-            alt="icecream logo"
-          />
-        </a>
-        <ul class="header__link-list">
-          <li class=""><a class="sliding-menu__link" href="">Home</a></li>
-          <li class=""><a class="sliding-menu__link" href="">About us</a></li>
-          <li class=""><a class="sliding-menu__link" href="">How it’s made?</a></li>
-          <li class=""><a class="sliding-menu__link" href="">Our products</a></li>
-          <li class=""><a class="sliding-menu__link" href="">Contact</a></li>
-        </ul>
-        <button type="button" class="header__desktop-button">
-          <p class="header__button-text">Buy now</p>
-          <p class="header__button-text">></p>
-        </button>
-      </nav>
-      <div class="tablet-buttons">
-        <button mobile-menu-open type="button" class="mobile__button">
-          <svg width="20px" height="20px">
-            <use width="20px" height="20px" href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <button type="button" class="tablet-buy">
-          <p class="tablet-buy__text">Buy now</p>
-          <p class="tablet-buy__text">></p>
-        </button>
-      </div>
-    </div>
-    <div mobile-menu class="sliding-menu is-hidden">
-      <button mobile-menu-close type="button" class="close-button">
-        <svg>
-          <use width="14px" height="14px" href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <button type="button" class="sliding-menu__buy-button">
-        <p class="sliding-menu__button-text">Buy now</p>
-        <p class="sliding-menu__button-text">></p>
-      </button>
-      <ul class="sliding-menu__list">
-        <li class="sliding-menu__item"><a class="sliding-menu__link" href="">Home</a></li>
-        <li class="sliding-menu__item"><a class="sliding-menu__link" href="">About us</a></li>
-        <li class="sliding-menu__item"><a class="sliding-menu__link" href="">How it’s made?</a></li>
-        <li class="sliding-menu__item"><a class="sliding-menu__link" href="">Our products</a></li>
-        <li class="sliding-menu__item"><a class="sliding-menu__link" href="">Contact</a></li>
-      </ul>
-    </div>
-    <script src="./index.js"></script>
-  </div>
+  <div class="header__order">
+  <nav class="header__navigation ">
+    <a  href="" >
+    <img class="header__logo"
+    srcset="./images/mobile/site-logo-x1.png 1x, ./images/mobile/site-logo-x2.png 2x"
+    src="./images/mobile/site-logo-x1.png" alt="icecream logo" />
+    
+  </a>
+  <ul class="header__link-list">
+      <li class="header__li"><a class="header__link-item" href="">Home</a></li>
+      <li class="header__li"><a class="header__link-item" href="advantages">About us</a></li>
+      <li class="header__li"><a class="header__link-item" href="#about">How it’s made?</a></li>
+      <li class="header__li"><a class="header__link-item" href="#products">Our products</a></li>
+      <li class="header__li"><a class="header__link-item" href="#contact">Contact</a></li>
+    </ul>
+    <button type="button" class='header__desktop-button'><p class='header__button-text'>Buy now</p>
+      <p class='header__button-text'>></p>
+  </button>
+
+  </nav>
+  <div class="tablet-buttons">
+  <button mobile-menu-open type="button" class="mobile__button">
+      <svg width="20px" height="20px">
+          <use width='20px' height="20px" href="./images/icons.svg#icon-burger"></use>
+      </svg>
+  </button>
+  <button type="button" class='tablet-buy'><p class='tablet-buy__text'>Buy now</p>
+      <p class='tablet-buy__text'>></p>
+  </button>
+</div>
+</div>
+<div mobile-menu class="sliding-menu is-hidden">
+  <button mobile-menu-close type="button" class="close-button">
+      <svg >
+          <use width='14px' height='14px' href='./images/icons.svg#icon-close'></use>
+      </svg>
+  </button>
+  <button type="button" class='sliding-menu__buy-button'><p class='sliding-menu__button-text'>Buy now</p>
+      <p class='sliding-menu__button-text'>></p>
+  </button>
+  <ul class="sliding-menu__list">
+      <li class="sliding-menu__item"><a class="sliding-menu__link" href="">Home</a></li>
+      <li class="sliding-menu__item"><a class="sliding-menu__link" href="#advantages">About us</a></li>
+      <li class="sliding-menu__item"><a class="sliding-menu__link" href="#about">How it’s made?</a></li>
+      <li class="sliding-menu__item"><a class="sliding-menu__link" href="#products">Our products</a></li>
+      <li class="sliding-menu__item"><a class="sliding-menu__link" href="#contact">Contact</a></li>
+    </ul>
+
+</div>
+<script src="./index.js"></script>
+</div>
 </header>
+
 
 <main>
   <section class="hero">
+      
+   <div class="container">
+    <div class="order">
+      <div class="milk"></div>
+      <div class="pink-ball"></div>
     <div class="hero__girl"></div>
-    <div class="container">
-      <h1 class="hero__heading">
-        ice cream <br />
-        made with <br />
-        <span class="hero__passion">passion</span>
-      </h1>
+    <picture  >
+      <source srcset="./images/mobile/hero-img-x1.png 1x, ./images/mobile/hero-img-x1.png 2x" media="(max-width:768px)"  / > 
+      <source srcset="./images/tab/tab-1hero-img-x1.png 1x, ./images/tab/tab-1hero-img-x2.png 2x" media="(min-width:768px) and (max-width:1280px)"   />
+      <source srcset="./images/pc/pc-1hero-img-x1.png 1x, ./images/pc/pc-1hero-img-x2.png 2x" media="(min-width:1280px)"  / >
+      <img class="icecream-big" src="./images/pc/pc-1hero-img-x2.png" alt="icecream" >
+    </picture >
+      <h1 class="hero__heading">ice cream <br> made with <br> <span class="hero__passion">passion</span> </h1>
       <div class="hero__buttons">
-        <button type="button" class="hero__red-button">Products</button>
-        <button type="button" class="hero__white-button">How it’s made?</button>
+      <button type="button" class="hero__red-button">Products</button>
+      <button type="button" class='hero__white-button'>How it’s made?</button>
       </div>
-
-      <div class="hero__description">
-        <p class="hero__description--red hero__description--first-ball">16</p>
-        <p class="hero__description--little">cafes</p>
-        <p class="hero__description--red hero__description--second-ball">23</p>
-        <p class="hero__description--little">food trucks</p>
-      </div>
-      <div class="hero__text-but">
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
-        </p>
-        <button class="hero__round-button">
-          <svg class="hero__right-arrow" width="7px" height="7px">
-            <use href="./images/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-      </div>
+    
+    <div class="hero__description">
+      <p class="hero__description--red hero__description--first-ball">16 </p>
+      <p class="hero__description--little">cafes</p> 
+      <p class="hero__description--red hero__description--second-ball">23</p>
+      <p class="hero__description--little">food trucks</p>
     </div>
+    <div class="hero__text-but">
+    <p  class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+    <button class="hero__round-button" >
+        <svg class="hero__right-arrow" width="7px" height="7px">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+    </button>
+    
+  </div>
+  
+  </div>
+ 
   </section>
+</div>
 </main>
