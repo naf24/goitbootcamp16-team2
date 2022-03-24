@@ -306,7 +306,6 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: $whiteColor;
-// margin-top: 144px;
 @include tablet {
 margin-top: 0px;
 }
@@ -371,6 +370,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .products__button:hover, .products__button:focus {
 background-color: $greyHover;
 color: $AccentPinkColor;
+cursor: pointer;
 }
 
 
@@ -423,7 +423,7 @@ background-color: $yellowColor;
 .backdrop__modal--milkshakes{
 background-color: $greenColor;
 }
-.modal__close {
+.modal__close{
 position: absolute;
 display: block;
 top: 10px;
@@ -433,13 +433,19 @@ border-radius: 50%;
 background-color: transparent;
 width: 30px;
 height: 30px;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-border: 1px solid $AccentPinkColor;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover > .modal__icon-vector,
+&:focus > .modal__icon-vector {
 fill: $AccentPinkColor;
 }
+&:hover,
+:focus {
+border: 1px solid $AccentPinkColor;
+fill: $AccentPinkColor;
+cursor: pointer;
 }
+}
+
 .modal__icon-vector{
 fill: $whiteColor;    
 position: absolute;
@@ -475,29 +481,47 @@ line-height: 1.13;
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 14px;
 line-height: 1.94;
 letter-spacing: 0.04em;
 color: $whiteColor;
 margin-bottom: 30px;
+@include tablet {
+font-size: 16px;
+}
+@include desktop {
+font-size: 18px;
+}
 }
 
 .modal__buttons{
-    display: flex;
+display: flex;
 justify-content: center;
 }
 .modal__button{
-    color: #ffd700;
-    background-color:#0057b8;
-    display: flex;
-    align-items: center;
-    margin-top: 17px;
-    padding: 15px 48px;
-    min-width: 176px;
-    height: 44px;
-    border-radius: 22px;
-    border-style: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+color: #ffd700;
+background-color:#0057b8;
+display: flex;
+align-items: center;
+margin-top: 17px;
+padding: 15px 48px;
+min-width: 176px;
+height: 44px;
+border-radius: 22px;
+border-style: none;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.31;
+@include tablet {
+font-size: 16px;
+}
+@include desktop {
+font-size: 18px;
+}
+&:hover,
+:focus {
+background-color: #ffd700;
+color:#0057b8;
+cursor: pointer;
+}
 }
