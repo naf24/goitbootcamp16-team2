@@ -101,6 +101,7 @@
   }
   &__red-button:hover, &__red-button:focus{
   background-color: #C7133E;
+  cursor: pointer;
   }
   &__white-button {
     font-family: 'DM Sans';
@@ -125,6 +126,7 @@
   }
   &__white-button:hover, &__white-button:focus{
     background-color: #ECEBEB;
+    cursor: pointer;
   }
   &__description {
       position: absolute;
@@ -237,6 +239,10 @@ z-index:-1;
           height: 26px;
           
         }
+       
+    }
+    &__round-button:hover{
+      cursor: pointer;
     }
     &__right-arrow{
         position: absolute;
