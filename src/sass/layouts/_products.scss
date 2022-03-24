@@ -92,13 +92,12 @@ flex-direction: row;
 }
 }
 .products__item {
-width: 280px;
-// min-height: 485px;
+max-width: 280px;
 border-radius: 24px;
 padding-bottom: 41px;
 padding-top: 144px;
 margin-bottom: 130px;
-
+position: relative;
 @include tablet {
 margin-right: 20px;
 padding-bottom: 40px;
@@ -115,18 +114,24 @@ padding-top: 165px;
 .products__cream{
 background-color: $middlePinkColor;
 position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 
 .products__cream::before{
 content: "";
 position: absolute;
-display: block;
+display: flex;
 width: 250px;
 height: 252px;
 background-image: url('../images/mobile/produckt-1-x1.png');
 background-repeat: no-repeat;
 background-size: cover; 
-left: 15px; 
+background-position: center;
+justify-content: center;
 top: -120px;
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
@@ -141,7 +146,7 @@ height: 225px;
 background-image: url('../images/tab/tab-produckt-1-x1.png');
 background-repeat: no-repeat;
 background-size: cover;  
-top: -138px;
+top: -100px;
 left: 0px;
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
@@ -170,7 +175,11 @@ background-image: url('../images/pc/pc-produckt-1-x2.png');
 
 .products__coffee{
 background-color: $yellowColor;
-position: relative;
+// position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .products__coffee::before{
 content: "";
@@ -181,7 +190,6 @@ height: 252px;
 background-repeat: no-repeat;
 background-size: cover; 
 justify-content: center;
-left: 15px; 
 top: -120px;
 background-image: url('../images/mobile/produckt-2-x1.png');
 
@@ -198,8 +206,7 @@ height: 225px;
 background-image: url('../images/tab/tab-produckt-2-x1.png');
 background-repeat: no-repeat;
 background-size: cover;  
-top: -138px;
-left: 0px; 
+top: -100px; 
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
@@ -212,7 +219,6 @@ position: absolute;
 display: block;
 width: 335px;
 height: 335px;
-left: 0px; 
 background-image: url('../images/pc/pc-produckt-2-x1.png');
 background-repeat: no-repeat;
 background-size: cover;  
@@ -227,7 +233,11 @@ background-image: url('../images/pc/pc-produckt-2-x2.png');
 
 .products__milkshakes{
 background-color: $greenColor;
-position: relative;
+// position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .products__milkshakes::before{
@@ -236,7 +246,6 @@ position: absolute;
 display: block;
 width: 250px;
 height: 252px;
-left: 15px;
 background-image: url('../images/mobile/produckt-3-x1.png');
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
@@ -255,8 +264,7 @@ height: 225px;
 background-image: url('../images/tab/tab-produckt-3-x1.png');
 background-repeat: no-repeat;
 background-size: cover;  
-top: -138px;
-left: 0px;
+top: -100px;
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
@@ -273,7 +281,6 @@ background-image: url('../images/pc/pc-produckt-3-x1.png');
 background-repeat: no-repeat;
 background-size: cover;  
 top: -198px;
-left: 0px;
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
