@@ -393,7 +393,7 @@ z-index:-1;
 }
 
 .icecream-big {
-  width:146px;
+  width:170px;
   position:absolute;
   bottom:-180px;
   right: 32px;
@@ -401,6 +401,7 @@ z-index:-1;
 @media screen and (min-width:768px) and (max-width:1280px){
   bottom: 0;
   right:210px;
+  width:140px;
 }
 @media screen and (min-width:1280px){
   bottom:0;
@@ -409,3 +410,4 @@ z-index:-1;
 }
 
 }
+
