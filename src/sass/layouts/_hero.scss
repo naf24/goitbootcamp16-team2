@@ -2,44 +2,34 @@
   background-color: #ffb8ca;
   padding-bottom: 160px;
   padding-top: 111px;
-  height:444px;
-  
-  background-color: #FFB8CA;
-  border: 1px solid #FFB8CA;
-  @media screen and (min-width:1280px) {
+  height: 444px;
+
+  background-color: #ffb8ca;
+  border: 1px solid #ffb8ca;
+  @media screen and (min-width: 1280px) {
     padding-top: 60px;
   }
-  @media screen and (min-width:768px){
-    padding:0;
-    height:334px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    height: 334px;
   }
-@media screen and (max-width:767px)  {
-    background-image:radial-gradient(
-        circle at 65% 40%,
-        #FFA5BA 172px,
-        #FFB8CA 172px
-      );
-      background-repeat: no-repeat;
-      
-}
+  @media screen and (max-width: 767px) {
+    background-image: radial-gradient(circle at 65% 40%, #ffa5ba 172px, #ffb8ca 172px);
+    background-repeat: no-repeat;
+  }
 
-@media screen and (max-width:767px) and (min-device-pixel-ratio:2) {
-    background-image:url('../images/mobile/hero-img-x2.png'),radial-gradient(
-        circle at 65% 40%,
-        #FFA5BA 172px,
-        #FFB8CA 172px
-      );
-      background-repeat: no-repeat; 
-      background-size: 171px 410px, auto;
-}
-@media screen and (min-width:1280px) {
-  height:570px;
-  
-  
-}
-    
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+    background-image: url('../images/mobile/hero-img-x2.png'),
+      radial-gradient(circle at 65% 40%, #ffa5ba 172px, #ffb8ca 172px);
+    background-repeat: no-repeat;
+    background-size: 171px 410px, auto;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 570px;
+  }
+
   &__heading {
-      position: relative;
+    position: relative;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 26px;
@@ -50,20 +40,18 @@
     z-index: 3;
     margin: 0;
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
-        font-size: 22px;
-        line-height: calc(25.19 / 22);
-       
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 22px;
+      line-height: calc(25.19 / 22);
     }
-  
   }
   &__passion {
     font-size: 48px;
     line-height: calc(46.32 / 48);
     color: #d41443;
-    @media screen and (min-width: 768px) and (max-width: 1280px){
-        font-size :37px;
-        line-height: calc(42.37 / 37);
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 37px;
+      line-height: calc(42.37 / 37);
     }
   }
   &__centering {
@@ -84,328 +72,307 @@
     margin-right: 8px;
     color: #fff;
     transition: background-color 300ms linear;
-    @media screen and (min-width:768px) and (max-width:1280px){
-
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
     }
-    @media screen and (min-width:1280px) {
-      width:107px;
-      height:40px;
-      font-size:14px;
+    @media screen and (min-width: 1280px) {
+      width: 107px;
+      height: 40px;
+      font-size: 14px;
       line-height: calc(18.23 / 14);
-      
     }
   }
-  &__buttons{
+  &__buttons {
     position: relative;
     z-index: 3;
   }
-  &__red-button:hover, &__red-button:focus{
-  background-color: #C7133E;
+  &__red-button:hover,
+  &__red-button:focus {
+    background-color: #c7133e;
+    cursor: pointer;
   }
   &__white-button {
     font-family: 'DM Sans';
-    font-weight:400;
-    font-size:8px;
-    text-align:center;
-    line-height:calc(10.42 / 8);
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    line-height: calc(10.42 / 8);
     width: 82.8px;
     height: 24px;
     border-radius: 20px;
-    border:none;
+    border: none;
     background-color: #fff;
-    color: #D41443;
+    color: #d41443;
     transition: background-color 300ms linear;
-    @media screen and (min-width:1280px) {
-      height:40px;
-      width:137px;
+    @media screen and (min-width: 1280px) {
+      height: 40px;
+      width: 137px;
       font-size: 14px;
-      line-height:calc(18 / 14);
+      line-height: calc(18 / 14);
     }
-
   }
-  &__white-button:hover, &__white-button:focus{
-    background-color: #ECEBEB;
+  &__white-button:hover,
+  &__white-button:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
   }
   &__description {
-      position: absolute;
-      right:0;
-      top:18px;
-      z-index:3;
-      @media screen and (max-width:767px) {
-        display: none;
-        
-      }
-      @media screen and (min-width: 1280px){
-        right:0;
-        top: 80px;
-      }
-        
-      
-    
+    position: absolute;
+    right: 0;
+    top: 18px;
+    z-index: 3;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 0;
+      top: 80px;
+    }
   }
- 
-  &__description--red{
-      font-family: "Titan One";
-      font-weight:400;
-      font-size:28px;
-      line-height: calc(32.06 / 28);
-      letter-spacing: 0.04em;
-      color:#D41443;
-      text-align: right;
-      position: relative;
-      
-      margin:0;
-      z-index:1;
-      @media screen and (min-width:1280px) {
-        font-size: 46px;
-        line-height: calc(52.67 / 46);
-      }
+
+  &__description--red {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(32.06 / 28);
+    letter-spacing: 0.04em;
+    color: #d41443;
+    text-align: right;
+    position: relative;
+
+    margin: 0;
+    z-index: 1;
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: calc(52.67 / 46);
+    }
   }
-  &__description--little{
-      font-family: "DM Sans";
-      font-weight:400;
-      font-size:8px;
-      line-height: calc(10.42 / 8);
-      color:#fff;
-      text-align: right;
-      
-      margin:0;
-      margin-bottom: 17px;
-      @media screen and (min-width:1280px){
-        font-size:14px;
-        line-height: calc(18.23 / 14);
-      }
+  &__description--little {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10.42 / 8);
+    color: #fff;
+    text-align: right;
+
+    margin: 0;
+    margin-bottom: 17px;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: calc(18.23 / 14);
+    }
   }
-  &__description--first-ball::after{
-content:"";
-width: 16px;
-height:16px;
-border-radius: 50%;
-background-color: #fff;
-position:absolute;
-right:-7px;
-z-index:-1;
-@media screen and (min-width:1280px){
-  width: 30px;
-  height:30px;
-}
-  }
-  &__description--second-ball::after{
-    content:"";
+  &__description--first-ball::after {
+    content: '';
     width: 16px;
-    height:16px;
+    height: 16px;
     border-radius: 50%;
     background-color: #fff;
-    position:absolute;
-    right:-7px;
-    z-index:-1;
-    @media screen and (min-width:1280px){
+    position: absolute;
+    right: -7px;
+    z-index: -1;
+    @media screen and (min-width: 1280px) {
       width: 30px;
-      height:30px;
+      height: 30px;
     }
-
+  }
+  &__description--second-ball::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: -7px;
+    z-index: -1;
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
   }
   &__text {
-      width: 114px;
-      font-family: "DM Sans";
-      font-weight:400;
-      font-size:8px;
-      line-height: calc(12 / 8);
-      color:#fff;
-      margin-bottom:0;
-    @media screen and (max-width:767px) {
-        display: none;
+    width: 114px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(12 / 8);
+    color: #fff;
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: calc(19.6 / 14);
+      margin-bottom: 20px;
+      width: 200px;
+    }
+  }
+  &__round-button {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    fill: #d41443;
+    background-color: #fff;
+    @media screen and (min-width: 1280px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  &__round-button:hover {
+    cursor: pointer;
+    background-color: #ECEBEB;
+  }
+  &__right-arrow {
+    position: absolute;
+    top: 34%;
+    left: 30%;
+    @media screen and (min-width: 1280px) {
+      top: 37%;
+      left: 33%;
+    }
+  }
+  &__text-but {
+    position: absolute;
+    left: 200px;
+    bottom: 81px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      left: 120px;
+      bottom: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 200px;
+      bottom: 60px;
+    }
+  }
+  &__girl::after {
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 190px;
+    height: 150px;
+    background-image: url('../images/tab/tab-3hero-img-x1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    @media screen and (min-width: 768px) {
+      display: block;
+      @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/tab/tab-3hero-img-x2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
       }
-      @media screen and (min-width:1280px){
-        font-size:14px;
-        line-height: calc(19.6 / 14);
-        margin-bottom: 20px;
-        width:200px;
+    }
 
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/pc/pc-3hero-img-x1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 304px;
+      height: 241px;
+      right: 0;
+
+      @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/pc/pc-3hero-img-x2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 304px;
+        height: 241px;
       }
     }
-    &__round-button{
-        position:relative;
-        width:18px;
-        height:18px;
-        border:none;
-        border-radius: 50%;
-        fill:#D41443;
-        background-color: #fff;
-        @media screen and (min-width:1280px){
-          width: 26px;
-          height: 26px;
-          
-        }
-    }
-    &__right-arrow{
-        position: absolute;
-        top:34%;
-        left:30%;
-        @media screen and (min-width:1280px){
-          top:37%;
-          left:33%
-        }
-
-    }
-    &__text-but{
-        position: absolute;
-        left:200px;
-        bottom: 81px;
-        @media screen and (max-width:767px) {
-            display: none;
-            
-        }
-        @media screen and (min-width:768px) and (max-width:1280px) {
-          left:120px;
-          bottom:34px;
-        }
-        @media screen and (min-width:1280px) {
-          left:200px;
-          bottom:60px;
-        }
-    }
-    &__girl::after{
-        display: none;
-        content:"";
-        position: absolute;
-        bottom: 0px;
-        right:0;
-        width: 190px;
-        height: 150px;
-        background-image: url("../images/tab/tab-3hero-img-x1.png");
-        background-repeat:no-repeat;
-        background-size: contain;
-        z-index:3;
-        @media screen and (min-width:768px){
-            display: block;
-            @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-              background-image: url("../images/tab/tab-3hero-img-x2.png");
-          background-repeat:no-repeat;
-          background-size: contain;
-          }
-        }
-        
-        @media screen and (min-width:1280px) {
-          background-image: url("../images/pc/pc-3hero-img-x1.png");
-        background-repeat:no-repeat;
-        background-size: contain;
-        width:304px;
-        height:241px;
-        right:0;
-
-        @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background-image: url("../images/pc/pc-3hero-img-x2.png");
-        background-repeat:no-repeat;
-        background-size: contain;
-        width:304px;
-        height:241px;
-        }
-        }
-        
-    }
-   
+  }
 }
 
-
-.pink-ball::after{
-    display: none;
-    content: "";
-    position:absolute;
-    z-index:-0;
-    border-radius: 50%;
-    background-image: radial-gradient(
-    circle at center,
-    #FFA5BA 165px,
-    #FFB8CA 165px
-  );
-  @media screen and (min-width:768px) {
-    display:block;
+.pink-ball::after {
+  display: none;
+  content: '';
+  position: absolute;
+  z-index: -0;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at center, #ffa5ba 165px, #ffb8ca 165px);
+  @media screen and (min-width: 768px) {
+    display: block;
     right: 120px;
     bottom: 40px;
-    width:335px;
+    width: 335px;
     height: 335px;
     background-repeat: no-repeat;
-
   }
-  @media screen and (min-width:1280px) {
-    background-image: radial-gradient(
-    circle at center,
-    #FFA5BA 267.5px,
-    #FFB8CA 267.5px
-  );
+  @media screen and (min-width: 1280px) {
+    background-image: radial-gradient(circle at center, #ffa5ba 267.5px, #ffb8ca 267.5px);
     right: 158px;
-    bottom:75px;
-    width:535px;
-    height:535px;
+    bottom: 75px;
+    width: 535px;
+    height: 535px;
   }
-
 }
-.milk::after{
-  display:none;
-  position:absolute;
-  left:32px;
-  bottom:16px;
-  content: "";
-  width:154px;
-  height:154px;
-  @media screen and (min-width:768px) {
+.milk::after {
+  display: none;
+  position: absolute;
+  left: 32px;
+  bottom: 16px;
+  content: '';
+  width: 154px;
+  height: 154px;
+  @media screen and (min-width: 768px) {
     bottom: 25px;
-    height:124px;
+    height: 124px;
     width: 124px;
-    display:block;
-    background: url('../images/tab/tab-2hero-img-x1.png')  no-repeat , #FFB8CA ; 
-    left:0;
+    display: block;
+    background: url('../images/tab/tab-2hero-img-x1.png') no-repeat, #ffb8ca;
+    left: 0;
     background-size: cover;
-    @media screen  and (min-device-pixel-ratio:2) {
-      background: url('../images/tab/tab-2hero-img-x2.png') ; 
-      
-     
+    @media screen and (min-device-pixel-ratio: 2) {
+      background: url('../images/tab/tab-2hero-img-x2.png');
+    }
   }
-}
 
-@media screen and (min-width:1280px) {
-  background: url('../images/pc/pc-2hero-img-x1.png') ; 
+  @media screen and (min-width: 1280px) {
+    background: url('../images/pc/pc-2hero-img-x1.png');
     background-size: cover;
-  width:215px;
-    height:215px;
-    display:block;
-    left:-50px;
+    width: 215px;
+    height: 215px;
+    display: block;
+    left: -50px;
     bottom: 45px;
-    @media screen  and (min-device-pixel-ratio:2) {
-      background: url('../images/pc/pc-2hero-img-x2.png') ; 
-      
-     
+    @media screen and (min-device-pixel-ratio: 2) {
+      background: url('../images/pc/pc-2hero-img-x2.png');
+    }
   }
-}
 }
 
 .order {
-  position:relative;
+  position: relative;
   height: 100%;
-@media screen and (min-width:768px) and (max-width:1280px) {
-  height: 334px;
-}
-@media screen and (min-width:1280px) {
-  height: 570px;
-  padding-top:80px;
-}
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 334px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 570px;
+    padding-top: 80px;
+  }
 }
 
 .icecream-big {
-  width:146px;
-  position:absolute;
-  bottom:-180px;
+  width: 170px;
+  position: absolute;
+  bottom: -180px;
   right: 32px;
-  z-index:0;
-@media screen and (min-width:768px) and (max-width:1280px){
-  bottom: 0;
-  right:210px;
-}
-@media screen and (min-width:1280px){
-  bottom:0;
-  right:350px;
-  width:236px;
-}
-
+  z-index: 0;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    bottom: 1px;
+    right: 210px;
+    width: 140px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 0;
+    right: 350px;
+    width: 236px;
+  }
 }

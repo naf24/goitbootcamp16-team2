@@ -36,12 +36,13 @@ body {
       text-decoration: none;
       color: #ffffff;
       padding-left: 20px;
-      transition: color 300ms linear ;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
   
   }
   &__link-item:hover, &__link-item:focus{
     color:#D41443;
+    cursor: pointer;
   }
   &__li+&__li{
     margin-left:35px;
@@ -53,16 +54,17 @@ body {
   }
   &__desktop-button:hover, &__desktop-button:focus{
     background-color:#ECEBEB;
+    cursor: pointer;
   }
   &__desktop-button{
     display: none;
-   transition: background-color 300ms linear;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 position:relative;
 @media screen and (min-width:1280px){
   display:flex;
 }
 z-index: 3;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   
@@ -95,6 +97,9 @@ z-index: 3;
   width: 14px;
   height: 14px;
 }
+.close-button:hover{
+  cursor: pointer;
+}
 .mobile__button {
   position: relative;
   z-index: 3;
@@ -106,6 +111,9 @@ z-index: 3;
   @media (min-width:1280px){
     display: none;
   }
+}
+.mobile__button:hover{
+  cursor: pointer;
 }
 .hidden {
   display: none;
@@ -138,7 +146,7 @@ z-index: 3;
   transition: transform 600ms ease-in-out;
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width:254px;
-    height:1020px;
+    height:100vw;
   }
   &__buy-button {
     margin-top: 60px;
@@ -159,6 +167,7 @@ z-index: 3;
   }
   &__buy-button:hover, &__buy-button:focus{
     background-color: #ECEBEB;
+    cursor: pointer;
   }
   &__button-text {
     font-family: 'DM Sans', sans-serif;
@@ -194,11 +203,12 @@ z-index: 3;
     text-decoration: none;
     color: #ffffff;
     padding-left: 20px;
-    transition: color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link:hover,  &__link:focus {
     color: #d41443;
     outline:none;
+    cursor: pointer;
   }
 }
 .tablet-buy {
@@ -217,7 +227,7 @@ z-index: 3;
   border: none;
   margin-left:32px;
 
-  transition: background-color 300ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) and (max-width:1280px) {
     display: flex;
   
@@ -247,4 +257,9 @@ z-index: 3;
 }
 .tablet-buy:hover, .tablet-buy:focus{
   background-color: #ECEBEB;
+  cursor: pointer;
+}
+
+.little-arrow{
+  margin-left:12px;
 }
