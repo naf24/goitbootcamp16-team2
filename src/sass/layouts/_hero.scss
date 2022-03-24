@@ -83,6 +83,7 @@
     font-size: 8px;
     margin-right: 8px;
     color: #fff;
+    transition: background-color 300ms linear;
     @media screen and (min-width:768px) and (max-width:1280px){
 
     }
@@ -113,6 +114,7 @@
     border:none;
     background-color: #fff;
     color: #D41443;
+    transition: background-color 300ms linear;
     @media screen and (min-width:1280px) {
       height:40px;
       width:137px;

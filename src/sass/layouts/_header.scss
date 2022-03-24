@@ -36,6 +36,7 @@ body {
       text-decoration: none;
       color: #ffffff;
       padding-left: 20px;
+      transition: color 300ms linear ;
       
   
   }
@@ -50,9 +51,12 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  &__desktop-button:hover, &__desktop-button:focus{
+    background-color:#ECEBEB;
+  }
   &__desktop-button{
     display: none;
-   
+   transition: background-color 300ms linear;
 position:relative;
 @media screen and (min-width:1280px){
   display:flex;
@@ -77,9 +81,7 @@ z-index: 3;
     color: $AccentPinkColor;
     
   }
-  &__desktop-button:hover, &__desktop-button:focus{
-    color:#ECEBEB;
-  }
+  
  
 }
 
@@ -203,6 +205,7 @@ z-index: 3;
     text-decoration: none;
     color: #ffffff;
     padding-left: 20px;
+    transition: color 300ms linear;
   }
   &__link:hover,  &__link:focus {
     color: #d41443;
@@ -224,6 +227,8 @@ z-index: 3;
   border-radius: 22px;
   border: none;
   margin-left:32px;
+
+  transition: background-color 300ms linear;
   @media screen and (min-width: 768px) and (max-width:1280px) {
     display: flex;
   
