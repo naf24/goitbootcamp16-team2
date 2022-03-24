@@ -1,204 +1,208 @@
 .footer{
-    background-color: $fieldPinkColor;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    }
+background-color: $fieldPinkColor;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
 
-    .footer__container{
-    background-color: $fieldPinkColor;
-    padding-top: 113px;
-    padding-bottom: 43px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-     @include tablet {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 165px;
-    padding-bottom: 91px;
-    // padding-left: 36px;
-    // padding-right: 36px;
-    }
-    @include desktop {
-    padding-top: 165px;
-    padding-bottom: 97px;
-    display: flex;
-    justify-content: space-between;
-    // padding-left: 114px;
-    // padding-right: 116px;
-    }}
+.footer__container{
+background-color: $fieldPinkColor;
+padding-top: 113px;
+padding-bottom: 43px;
+// padding-left: 20px;
+// padding-right: 20px;
+@include tablet {
+display: flex;
+justify-content: space-between;
+padding-top: 165px;
+padding-bottom: 91px;
+// padding-left: 36px;
+// padding-right: 36px;
+}
+@include desktop {
+padding-top: 165px;
+padding-bottom: 97px;
+display: flex;
+justify-content: space-between;
+// padding-left: 114px;
+// padding-right: 116px;
+}}
 
-    .footer__container--border{
-        border-bottom: 1px solid #E1E1E1;
-  width: 100%;
-  display: flex;
-    }
-    .footer__title{
-    margin-bottom: 43px;
-    @include tablet {
-        margin-bottom: 0px;
-        }
-        @include desktop {
-        margin-bottom: 0px;
-        }
-    }
-    
-    .footer__title--first{
-        display: block;
-        flex-direction: column;
-        @include tablet {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        }
-        @include desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-left: -20px;
-        }
-    } 
-    .footer__title--light{
-    font-family: Titan One;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $strongPinkColor; 
-    margin-right: 66px;
-    margin-bottom: 17px;
-    @include tablet {
-    font-size: 26px;
-    letter-spacing: 0.04em;
-    line-height: 1.15;
-    margin-right: 0px;
-    margin-bottom: 16px;
-    }
-    @include desktop {
-        font-size: 30px;
-        letter-spacing: 0.06em;
-        line-height: 1.13;
-        margin-right: 0px;
-        display: flex;
-        margin-left: 20px;
-    }
-    }
-    .footer__title--accent{
-    font-family: Titan One;
-    font-size: 34px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $AccentPinkColor;
-    margin-right: 100px;
-    @include tablet {
-    font-size: 48px;
-    letter-spacing: 0.06em;
-    margin-right: 0px;
-    }
-    @include desktop {
-        font-size: 58px;
-        letter-spacing: 0.06em;
-        margin-right: 0px;
-        display: flex;
-        margin-left: 20px;
-    }
-    }
-    .footer__list{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-    margin-right: -24px;
-    }
+.footer__container--border{
+border-bottom: 1px solid #E1E1E1;
+width: 100%;
+display: flex;
+}
+.footer__title{
+margin-bottom: 43px;
+@include tablet {
+margin-bottom: 0px;
+}
+@include desktop {
+margin-bottom: 0px;
+}
+}
 
-    .footer__item{
- margin-right: 24px;
-   :hover, :focus{
-    fill: $AccentPinkColor; 
-    }
-    }
-    .footer__icon{
-    border-radius: 50%;
-    fill: $strongPinkColor;
-    color: $whiteColor;
-    transition-property: fill;
-    transition-duration: 350ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .footer__tel{
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: $AccentPinkColor; 
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 5px;
-    @include tablet{
-        font-size: 14px;
-        }
-        @include desktop {
-            font-size: 16px;
-        }
-    }
-    .footer__text--black{
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: $titleBlackColor;
-    display: flex;
-    justify-content: flex-end;
-    @include tablet {
-    font-size: 14px;
-    }
-    @include desktop {
-        font-size: 16px;
-    }
-    }
-    .footer__copyright{
-    padding-top: 22px;
-    padding-bottom: 25px; 
-    display: block;
-    flex-direction: column;
-    @include tablet {
-        padding-top: 29px;
-        padding-bottom: 18px; 
-        display: flex;
-        flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        @include desktop {
-            padding-top: 9px;
-            padding-bottom: 10px; 
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    .footer__text--grey, .footer__text--mob{
-    display: flex;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.52;
-    color: $textGreyColor;
-    justify-content: center;
-    @include tablet {
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-        }
-        @include desktop {
-            line-height: 1.86;
-            letter-spacing: 0.02em;
-        }
-    }
-    .footer__text--mob{
+.footer__title--first{
+display: block;
+flex-direction: column;
+@include tablet {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
+@include desktop {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+margin-left: -20px;
+}
+} 
+.footer__title--light{
+font-family: Titan One;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $strongPinkColor; 
+margin-right: 66px;
+margin-bottom: 17px;
+@include tablet {
+font-size: 26px;
+letter-spacing: 0.04em;
+line-height: 1.15;
+margin-right: 0px;
+margin-bottom: 16px;
+}
+@include desktop {
+font-size: 30px;
+letter-spacing: 0.06em;
+line-height: 1.13;
+margin-right: 0px;
+display: flex;
+margin-left: 20px;
+}
+}
+.footer__title--accent{
+font-family: Titan One;
+font-size: 34px;
+line-height: 1.14;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $AccentPinkColor;
+margin-right: 100px;
+@include tablet {
+font-size: 48px;
+letter-spacing: 0.06em;
+margin-right: 0px;
+}
+@include desktop {
+font-size: 58px;
+letter-spacing: 0.06em;
+margin-right: 0px;
+display: flex;
+margin-left: 20px;
+}
+}
+.footer__list{
+display: flex;
+justify-content: flex-end;
+margin-bottom: 50px;
+
+
+}
+
+.footer__item{
+margin-right: 24px;
+&:last-child {
+margin-right: 0;
+}
+:hover, :focus{
+fill: $AccentPinkColor; 
+}
+}
+.footer__icon{
+border-radius: 50%;
+fill: $strongPinkColor;
+color: $whiteColor;
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__tel{
+font-family: DM Sans;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: $AccentPinkColor; 
+text-decoration: none;
+display: flex;
+justify-content: flex-end;
 margin-left: 5px;
-    }
+@include tablet{
+font-size: 14px;
+}
+@include desktop {
+font-size: 16px;
+}
+}
+.footer__text--black{
+font-family: DM Sans;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: $titleBlackColor;
+display: flex;
+justify-content: flex-end;
+@include tablet {
+font-size: 14px;
+}
+@include desktop {
+font-size: 16px;
+}
+}
+.footer__copyright{
+padding-top: 22px;
+padding-bottom: 25px; 
+display: block;
+flex-direction: column;
+@include tablet {
+padding-top: 29px;
+padding-bottom: 18px; 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+@include desktop {
+padding-top: 9px;
+padding-bottom: 10px; 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+}
+.footer__text--grey, .footer__text--mob{
+display: flex;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.52;
+color: $textGreyColor;
+justify-content: center;
+@include tablet {
+line-height: 1.86;
+letter-spacing: 0.02em;
+}
+@include desktop {
+line-height: 1.86;
+letter-spacing: 0.02em;
+}
+}
+.footer__text--mob{
+margin-left: 5px;
+}

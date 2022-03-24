@@ -366,7 +366,7 @@ border: none;
 width: 40px;
 height: 40px;
 border-radius: 50%;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__button:hover, .products__button:focus {
 
@@ -434,7 +434,7 @@ border-radius: 50%;
 background-color: transparent;
 width: 30px;
 height: 30px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
 border: 1px solid $AccentPinkColor;
@@ -448,11 +448,10 @@ top: 8px;
 right: 8px;
 width: 11px;
 height: 11px;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
 fill: $AccentPinkColor;
-
 }
 }
 
