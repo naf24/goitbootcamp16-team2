@@ -9,23 +9,17 @@ width: 100%;
 background-color: $fieldPinkColor;
 padding-top: 113px;
 padding-bottom: 43px;
-// padding-left: 20px;
-// padding-right: 20px;
 @include tablet {
 display: flex;
 justify-content: space-between;
 padding-top: 165px;
 padding-bottom: 91px;
-// padding-left: 36px;
-// padding-right: 36px;
 }
 @include desktop {
 padding-top: 165px;
 padding-bottom: 97px;
 display: flex;
 justify-content: space-between;
-// padding-left: 114px;
-// padding-right: 116px;
 }}
 
 .footer__container--border{
@@ -108,10 +102,7 @@ margin-left: 20px;
 display: flex;
 justify-content: flex-end;
 margin-bottom: 50px;
-
-
 }
-
 .footer__item{
 margin-right: 24px;
 &:last-child {

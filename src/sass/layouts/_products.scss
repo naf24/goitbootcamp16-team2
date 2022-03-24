@@ -369,7 +369,6 @@ border-radius: 50%;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__button:hover, .products__button:focus {
-
 background-color: $greyHover;
 color: $AccentPinkColor;
 }
@@ -396,8 +395,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 .backdrop__modal {
-width: 450px;
-min-height: 409px;
+max-width: 350px;
+min-height: 309px;
 background-color: $menuPinkColor;
 border-radius: 22px;
 position: absolute;
@@ -454,7 +453,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 fill: $AccentPinkColor;
 }
 }
-
 .modal__title{
 font-family: Titan One;
 font-size: 20px;
@@ -482,4 +480,24 @@ line-height: 1.94;
 letter-spacing: 0.04em;
 color: $whiteColor;
 margin-bottom: 30px;
+}
+
+.modal__buttons{
+    display: flex;
+justify-content: center;
+}
+.modal__button{
+    color: #ffd700;
+    background-color:#0057b8;
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    padding: 15px 48px;
+    min-width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 }
