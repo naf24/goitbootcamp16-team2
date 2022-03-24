@@ -34,7 +34,7 @@
 }
 @media screen and (min-width:1280px) {
   height:570px;
-  padding-top: 80px;
+  
   
 }
     
@@ -55,6 +55,7 @@
         line-height: calc(25.19 / 22);
        
     }
+  
   }
   &__passion {
     font-size: 48px;
@@ -97,7 +98,7 @@
     position: relative;
     z-index: 3;
   }
-  &__red-button:hover{
+  &__red-button:hover, &__red-button:focus{
   background-color: #C7133E;
   }
   &__white-button {
@@ -120,19 +121,21 @@
     }
 
   }
-  &__white-button:hover{
+  &__white-button:hover, &__white-button:focus{
     background-color: #ECEBEB;
   }
   &__description {
       position: absolute;
-      right:42px;
+      right:0;
       top:18px;
       z-index:3;
       @media screen and (max-width:767px) {
         display: none;
+        
       }
       @media screen and (min-width: 1280px){
-        right:115px;
+        right:0;
+        top: 80px;
       }
         
       
@@ -248,10 +251,16 @@ z-index:-1;
         left:200px;
         bottom: 81px;
         @media screen and (max-width:767px) {
-            display: none; 
+            display: none;
+            
+        }
+        @media screen and (min-width:768px) and (max-width:1280px) {
+          left:120px;
+          bottom:34px;
         }
         @media screen and (min-width:1280px) {
-          left:340px
+          left:200px;
+          bottom:60px;
         }
     }
     &__girl::after{
@@ -259,7 +268,7 @@ z-index:-1;
         content:"";
         position: absolute;
         bottom: 0px;
-        right:32px;
+        right:0;
         width: 190px;
         height: 150px;
         background-image: url("../images/tab/tab-3hero-img-x1.png");
@@ -281,7 +290,7 @@ z-index:-1;
         background-size: contain;
         width:304px;
         height:241px;
-        right:109px;
+        right:0;
 
         @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url("../images/pc/pc-3hero-img-x2.png");
@@ -310,7 +319,7 @@ z-index:-1;
   );
   @media screen and (min-width:768px) {
     display:block;
-    right: 185px;
+    right: 120px;
     bottom: 40px;
     width:335px;
     height: 335px;
@@ -323,8 +332,8 @@ z-index:-1;
     #FFA5BA 267.5px,
     #FFB8CA 267.5px
   );
-    right: 300px;
-    bottom:76px;
+    right: 158px;
+    bottom:75px;
     width:535px;
     height:535px;
   }
@@ -339,43 +348,61 @@ z-index:-1;
   width:154px;
   height:154px;
   @media screen and (min-width:768px) {
+    bottom: 25px;
+    height:124px;
+    width: 124px;
     display:block;
-    background: url('../images/tab/tab-2hero-img-x1.png') left 50px bottom 16px no-repeat , #FFB8CA ; 
-    
+    background: url('../images/tab/tab-2hero-img-x1.png')  no-repeat , #FFB8CA ; 
+    left:0;
+    background-size: cover;
+    @media screen  and (min-device-pixel-ratio:2) {
+      background: url('../images/tab/tab-2hero-img-x2.png') ; 
+      
+     
+  }
 }
-@media screen and (min-width:768px) and (min-device-pixel-ratio:2) {
-    background: url('../images/tab/tab-2hero-img-x2.png') ; 
-    
-    display:block;
-}
+
 @media screen and (min-width:1280px) {
   background: url('../images/pc/pc-2hero-img-x1.png') ; 
     background-size: cover;
   width:215px;
     height:215px;
     display:block;
-    left:115px;
+    left:-50px;
+    bottom: 45px;
+    @media screen  and (min-device-pixel-ratio:2) {
+      background: url('../images/pc/pc-2hero-img-x2.png') ; 
+      
+     
+  }
 }
 }
 
 .order {
   position:relative;
   height: 100%;
+@media screen and (min-width:768px) and (max-width:1280px) {
+  height: 334px;
+}
+@media screen and (min-width:1280px) {
+  height: 570px;
+  padding-top:80px;
+}
 }
 
 .icecream-big {
   width:146px;
   position:absolute;
-  bottom:-160px;
+  bottom:-180px;
   right: 32px;
   z-index:0;
 @media screen and (min-width:768px) and (max-width:1280px){
   bottom: 0;
-  right:303px;
+  right:210px;
 }
 @media screen and (min-width:1280px){
   bottom:0;
-  right:450px;
+  right:350px;
   width:236px;
 }
 

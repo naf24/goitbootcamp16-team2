@@ -15,6 +15,7 @@ body {
   @media screen and (min-width:1280px){
     padding-top:40px;
     padding-bottom: 0;
+    
   }
   &__link-list{
     display:none;
@@ -113,16 +114,22 @@ z-index: 3;
   align-items: center;
   margin-right: 34px;
   margin-left: 34px;
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    max-width:480px;
+    margin:auto;
+  }
   @media screen and (min-width:1280px){
     display: block;
-    margin-left: 45px;
-    margin-right: 115px;
+   
   }
   @media screen and (min-width:768px) and (max-width:1280px){
-    margin-left:34px;
-    margin-right:34px;
+    margin:auto;
+    max-width: 700px;
   }
-
+@media screen and (min-width:1280px) {
+  max-width: 1119px;
+  margin: auto;
+}
 }
 .sliding-menu.is-hidden {
   pointer-events: none;
