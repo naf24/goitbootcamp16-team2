@@ -138,7 +138,7 @@ z-index: 3;
   transition: transform 600ms ease-in-out;
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     width:254px;
-    height:1020px;
+    height:100vw;
   }
   &__buy-button {
     margin-top: 60px;
