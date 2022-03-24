@@ -110,8 +110,11 @@
     margin-bottom: 50px;
     margin-right: -24px;
     }
+
+    .footer__item{
+        margin-right: 24px;
+    }
     .footer__icon{
-    margin-right: 24px;
     border-radius: 50%;
     fill: $strongPinkColor;
     color: $whiteColor;
