@@ -42,6 +42,7 @@ body {
   }
   &__link-item:hover, &__link-item:focus{
     color:#D41443;
+    cursor: pointer;
   }
   &__li+&__li{
     margin-left:35px;
@@ -53,6 +54,7 @@ body {
   }
   &__desktop-button:hover, &__desktop-button:focus{
     background-color:#ECEBEB;
+    cursor: pointer;
   }
   &__desktop-button{
     display: none;
@@ -95,6 +97,9 @@ z-index: 3;
   width: 14px;
   height: 14px;
 }
+.close-button:hover{
+  cursor: pointer;
+}
 .mobile__button {
   position: relative;
   z-index: 3;
@@ -106,6 +111,9 @@ z-index: 3;
   @media (min-width:1280px){
     display: none;
   }
+}
+.mobile__button:hover{
+  cursor: pointer;
 }
 .hidden {
   display: none;
@@ -159,6 +167,7 @@ z-index: 3;
   }
   &__buy-button:hover, &__buy-button:focus{
     background-color: #ECEBEB;
+    cursor: pointer;
   }
   &__button-text {
     font-family: 'DM Sans', sans-serif;
@@ -199,6 +208,7 @@ z-index: 3;
   &__link:hover,  &__link:focus {
     color: #d41443;
     outline:none;
+    cursor: pointer;
   }
 }
 .tablet-buy {
@@ -247,6 +257,7 @@ z-index: 3;
 }
 .tablet-buy:hover, .tablet-buy:focus{
   background-color: #ECEBEB;
+  cursor: pointer;
 }
 
 .little-arrow{
