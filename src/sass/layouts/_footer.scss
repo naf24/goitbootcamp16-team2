@@ -112,15 +112,18 @@
     }
 
     .footer__item{
-        margin-right: 24px;
+ margin-right: 24px;
+   :hover, :focus{
+    fill: $AccentPinkColor; 
+    }
     }
     .footer__icon{
     border-radius: 50%;
     fill: $strongPinkColor;
     color: $whiteColor;
-    :hover, :focus{
-    fill: $AccentPinkColor; 
-    }
+    transition-property: fill;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     .footer__tel{
     font-family: DM Sans;
