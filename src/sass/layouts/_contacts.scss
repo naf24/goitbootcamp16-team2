@@ -235,8 +235,9 @@ p {
 }
 
 // Модалка
-.beckdrop {
-    z-index: 2;
+
+.backdrop {
+    z-index: 4;
     position: fixed;
     top: 0;
     left: 0;
@@ -250,40 +251,71 @@ p {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .beckdrop.is-hidden {
+  .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
   
-  .beckdrop.is-hidden .model {
+  .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.25);
   }
   
-  .model {
+  .modal {
     position: relative;
     max-width: 450px;
-    min-height: 581px;
+    min-height: 550px;
     padding: 40px;
-    background-color: $fieldPinkColor;
+    background-color: $middlePinkColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 15px;
     top: 50%;
     left: 50%;
   
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 768px) {
+    @include tablet {
       position: absolute;
       width: 450px;
     }
   
-    @media screen and (min-width: 1200px) {
-      min-width: 528px;
+    @include desktop {
+      min-width: 500px;
     }
   }
-
-.close__button {
+  
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    background-color: $middlePinkColor;
+    padding: 0;
+    border: 1px solid $whiteColor;
+    border-radius: 50%;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      border: 1px solid $AccentPinkColor;
+    }
+  }
+  
+  .close__button {
     width: 15px;
     height: 15px;
-}
+    fill: $whiteColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    .close:hover &,
+    .close:focus & {
+      fill: $AccentPinkColor;
+    }
+  }  
