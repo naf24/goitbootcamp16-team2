@@ -1,4 +1,16 @@
 .about {
+  padding-top: 125px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+
+  @include desktop {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
   background-color: $fieldPinkColor;
 
   @include until-tablet {
@@ -27,21 +39,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right 0 bottom -45px;
-  }
-}
-
-.about--container {
-  padding-top: 125px;
-  padding-bottom: 20px;
-
-  @include tablet {
-    padding-top: 130px;
-    padding-bottom: 33px;
-  }
-
-  @include desktop {
-    padding-top: 125px;
-    padding-bottom: 20px;
   }
 }
 

@@ -5,6 +5,17 @@ ul {
 }
 
 .advantages {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @include tablet {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+
+  @include desktop {
+    padding-top: 20px;
+  }
   background-color: $fieldPinkColor;
 }
 
@@ -19,20 +30,6 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.container--advantages {
-  padding-top: 20px;
-  padding-bottom: 49px;
-
-  @include tablet {
-    padding-top: 33px;
-    padding-bottom: 70px;
-  }
-
-  @include desktop {
-    padding-top: 20px;
-  }
 }
 
 .advantages__list {
