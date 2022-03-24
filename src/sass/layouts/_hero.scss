@@ -23,15 +23,7 @@
       
 }
 
-@media screen and (max-width:767px) and (min-device-pixel-ratio:2) {
-    background-image:url('../images/mobile/hero-img-x2.png'),radial-gradient(
-        circle at 65% 40%,
-        #FFA5BA 172px,
-        #FFB8CA 172px
-      );
-      background-repeat: no-repeat; 
-      background-size: 171px 410px, auto;
-}
+
 @media screen and (min-width:1280px) {
   height:570px;
   
@@ -357,6 +349,7 @@ z-index:-1;
   content: "";
   width:154px;
   height:154px;
+  background-repeat: no-repeat;
   @media screen and (min-width:768px) {
     bottom: 25px;
     height:124px;
@@ -365,8 +358,11 @@ z-index:-1;
     background: url('../images/tab/tab-2hero-img-x1.png')  no-repeat , #FFB8CA ; 
     left:0;
     background-size: cover;
-    @media screen  and (min-device-pixel-ratio:2) {
+    @media screen  and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background: url('../images/tab/tab-2hero-img-x2.png') ; 
+     background-size: 124px 124px;
       
      
   }
@@ -380,8 +376,11 @@ z-index:-1;
     display:block;
     left:-50px;
     bottom: 45px;
-    @media screen  and (min-device-pixel-ratio:2) {
+    @media screen  and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background: url('../images/pc/pc-2hero-img-x2.png') ; 
+      background-size: 215px 215px;
       
      
   }
