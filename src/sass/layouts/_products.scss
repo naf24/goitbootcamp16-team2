@@ -121,11 +121,12 @@ width: 280px;
             content: "";
             position: absolute;
             display: block;
-            width: 249px;
+            width: 250px;
             height: 252px;
             background-image: url('../images/mobile/produckt-1-x1.png');
             background-repeat: no-repeat;
-            background-size: cover;  
+            background-size: cover; 
+            left: 15px; 
             top: -120px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -141,6 +142,7 @@ width: 280px;
                 background-repeat: no-repeat;
                 background-size: cover;  
                 top: -138px;
+                left: 0px;
                 @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
@@ -157,6 +159,7 @@ width: 280px;
                 background-repeat: no-repeat;
                 background-size: cover;  
                 top: -198px;
+                left: 0px;
                 @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
@@ -173,12 +176,15 @@ width: 280px;
         content: "";
         position: absolute;
         display: block;
-        width: 249px;
+        width: 250px;
         height: 252px;
-        background-image: url('../images/mobile/produckt-2-x1.png');
         background-repeat: no-repeat;
-        background-size: cover;  
+        background-size: cover; 
+        justify-content: center;
+        left: 15px; 
         top: -120px;
+        background-image: url('../images/mobile/produckt-2-x1.png');
+        
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -193,7 +199,7 @@ width: 280px;
             background-repeat: no-repeat;
             background-size: cover;  
             top: -138px;
-    
+            left: 0px; 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
@@ -206,6 +212,7 @@ width: 280px;
             display: block;
             width: 335px;
             height: 335px;
+            left: 0px; 
             background-image: url('../images/pc/pc-produckt-2-x1.png');
             background-repeat: no-repeat;
             background-size: cover;  
@@ -227,8 +234,9 @@ width: 280px;
         content: "";
         position: absolute;
         display: block;
-        width: 249px;
+        width: 250px;
         height: 252px;
+        left: 15px;
         background-image: url('../images/mobile/produckt-3-x1.png');
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -248,6 +256,7 @@ width: 280px;
             background-repeat: no-repeat;
             background-size: cover;  
             top: -138px;
+            left: 0px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
@@ -264,6 +273,7 @@ width: 280px;
             background-repeat: no-repeat;
             background-size: cover;  
             top: -198px;
+            left: 0px;
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
