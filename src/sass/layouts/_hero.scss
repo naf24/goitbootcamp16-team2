@@ -234,6 +234,7 @@ z-index:-1;
         border-radius: 50%;
         fill:#D41443;
         background-color: #fff;
+        transition: background-color 300ms linear;
         @media screen and (min-width:1280px){
           width: 26px;
           height: 26px;
@@ -243,6 +244,7 @@ z-index:-1;
     }
     &__round-button:hover{
       cursor: pointer;
+      background-color: #ECEBEB;
     }
     &__right-arrow{
         position: absolute;
