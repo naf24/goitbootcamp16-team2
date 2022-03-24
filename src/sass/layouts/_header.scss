@@ -62,7 +62,7 @@ position:relative;
   display:flex;
 }
 z-index: 3;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   
@@ -247,4 +247,8 @@ z-index: 3;
 }
 .tablet-buy:hover, .tablet-buy:focus{
   background-color: #ECEBEB;
+}
+
+.little-arrow{
+  margin-left:12px;
 }
