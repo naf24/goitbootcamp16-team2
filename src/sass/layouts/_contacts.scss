@@ -186,14 +186,12 @@ p {
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
-    color: #D41443;
-    background: #FFFFFF;
     border-radius: 22px;
     border: transparent;
     margin-bottom: 10px;
     width: 162px;
     height: 44px;
-    stroke: #D41443;
+    cursor: pointer;
     @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 15px;
@@ -201,12 +199,25 @@ p {
     &:last-child {
         margin-right: 0;
     }
-    &:hover,
-    &:focus {
+    &__lockation {
         color: #FFFFFF;
         background: #D41342;
         stroke: #FFFFFF;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background: #C7133E;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    &__franchise {
+        color: #D41443;
+        background: #FFFFFF;
+        stroke: #D41443;
+        &:hover,
+        &:focus {
+            background: #ECEBEB;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 }
 
