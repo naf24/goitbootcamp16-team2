@@ -138,7 +138,7 @@ z-index: 3;
   width: 250px;
   height: 100vh;
   position: fixed;
-  transition: transform 500ms ease-in-out 100ms;
+  transition: transform 400ms ease-in-out 100ms;
   background-color: #e17992;
   top: 0;
   right: 0;
@@ -282,7 +282,7 @@ z-index: 3;
   left: 0;
   z-index:10;
   
-  transition: opacity 600ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 
 .backdrop1.is-hidden .sliding-menu {

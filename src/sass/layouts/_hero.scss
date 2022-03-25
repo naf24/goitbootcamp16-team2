@@ -59,6 +59,11 @@
     align-items: center;
   }
   &__red-button {
+    padding-top: 6px;
+    display:inline-block;
+    text-align: center;
+vertical-align: middle;
+    text-decoration:none;
     width: 62.4px;
     height: 24px;
     border-radius: 20px;
@@ -75,6 +80,7 @@
     @media screen and (min-width: 768px) and (max-width: 1279px) {
     }
     @media screen and (min-width: 1280px) {
+      padding-top:10px;
       width: 107px;
       height: 40px;
       font-size: 14px;
@@ -91,6 +97,11 @@
     cursor: pointer;
   }
   &__white-button {
+    padding-top: 6px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+vertical-align: middle;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 8px;
@@ -104,6 +115,7 @@
     color: #d41443;
     transition: background-color 300ms linear;
     @media screen and (min-width: 1280px) {
+      padding-top: 10px;
       height: 40px;
       width: 137px;
       font-size: 14px;
