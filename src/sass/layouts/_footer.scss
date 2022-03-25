@@ -3,16 +3,24 @@ background-color: $fieldPinkColor;
 padding-left: 0px;
 padding-right: 0px;
 width: 100%;
+padding-top: 113px;
+padding-bottom: 25px;
+@include tablet {
+padding-top: 165px;
+padding-bottom: 18px;
+}
+@include desktop {
+padding-top: 165px;
+padding-bottom: 10px;
+}
 }
 
 .footer__container{
 background-color: $fieldPinkColor;
-padding-top: 113px;
 padding-bottom: 43px;
 @include tablet {
 display: flex;
 justify-content: space-between;
-padding-top: 165px;
 padding-bottom: 91px;
 }
 @include desktop {
@@ -156,12 +164,10 @@ font-size: 16px;
 }
 .footer__copyright{
 padding-top: 22px;
-padding-bottom: 25px; 
 display: block;
 flex-direction: column;
 @include tablet {
 padding-top: 29px;
-padding-bottom: 18px; 
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -169,7 +175,6 @@ justify-content: center;
 }
 @include desktop {
 padding-top: 9px;
-padding-bottom: 10px; 
 display: flex;
 flex-direction: row;
 align-items: center;
