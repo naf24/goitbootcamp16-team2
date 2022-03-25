@@ -2,33 +2,17 @@
 
 .gallery {
   background: linear-gradient(to top, #fff 60%, #fff5f6 40%);
-  // &__image {
-  //   width: 100%;
-  //   display: block;
-  // }
+  padding-top: 49px;
+  @include tablet {
+    padding-top: 70px;
+  }
   &__wrapper {
-    padding-top: 49px;
-    @include tablet {
-      padding-top: 70px;
-    }
-    // margin-left: auto;
-    // margin-right: auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
-
-    // @include until-tablet {
-    //   max-width: 480px;
-    // }
-
     @include tablet {
       padding-left: 35px;
       padding-right: 35px;
-      // width: 768px;
-    }
-    @include desktop {
-      // width: 1050px;
     }
   }
+
   &__grid {
     display: grid;
     justify-content: center;
