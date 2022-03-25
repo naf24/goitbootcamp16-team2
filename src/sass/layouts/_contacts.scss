@@ -291,17 +291,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-  
     width: 30px;
     height: 30px;
-  
-    background-color: $middlePinkColor;
+    background-color: #ffb8ca;
     padding: 0;
-    border: 1px solid $whiteColor;
+    border: 1px solid #ffffff;
     border-radius: 50%;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-  
     &:hover,
     &:focus {
       border: 1px solid $AccentPinkColor;
